@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "UIImage+SSIImage.h"
+#import "UIColor+SSI.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,29 @@
 
 @implementation AppDelegate
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        
+        UIColor *backgroundColor =  [UIColor blueBurst];
+
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:backgroundColor] forBarMetrics:UIBarMetricsDefault];
+        [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+        [[UINavigationBar appearance] setTranslucent:NO];
+        
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+    }
+    return self;
+
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [application setStatusBarHidden:NO];
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     return YES;
 }
 

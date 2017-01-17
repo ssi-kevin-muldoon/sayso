@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SSIToolBar+SSI.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet SSIToolBar *animatedToolBar;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -16,14 +19,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self setNeedsStatusBarAppearanceUpdate];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"saysoNavigationBarLogo"]];
+
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.animatedToolBar close];
+    [self.animatedToolBar percentValue:@"10%"];
 }
 
+- (IBAction)buttonAction:(id)sender {
+    
+    [self toggleAction:sender];
+}
+
+- (void)toggleAction:(id)sender {
+    
+    _button.tag = _button.tag +1;
+    
+    if (_button.tag % 2) {
+        [self.animatedToolBar addRevealAnimation];
+    } else {
+        [self.animatedToolBar addDismissAnimation];
+    }
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED { // Defaults to UIStatusBarStyleDefault
+    return UIStatusBarStyleLightContent;
+}
 
 @end
