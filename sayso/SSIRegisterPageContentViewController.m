@@ -34,7 +34,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self.animation viewDidAppearAnimation];
+    [self.animation addViewDidAppearAnimation];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {

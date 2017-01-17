@@ -162,7 +162,7 @@ static NSString *SSIRegisterPageContentViewControllerIdentifier = @"SSIRegisterP
                         @"Unlock abilities",
                         @"Level up!",
                         @"Fabulous prizes!",
-                        @"Be social!"
+                        @"We're very social!"
                         ];
     }
     return _pageTitles;

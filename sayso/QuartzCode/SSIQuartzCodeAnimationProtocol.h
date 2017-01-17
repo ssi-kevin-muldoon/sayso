@@ -10,7 +10,7 @@
 
 @protocol SSIQuartzCodeAnimationProtocol <NSObject>
 
-- (void)viewDidAppearAnimation;
+- (void)addViewDidAppearAnimation;
 - (void)removeAllAnimations;
 
 @end
