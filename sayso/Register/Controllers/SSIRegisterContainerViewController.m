@@ -8,6 +8,7 @@
 
 #import "SSIRegisterContainerViewController.h"
 #import "SSIRegisterPageViewController.h"
+#import "SSIAlertController.h"
 
 static NSString *SSIDashboardStoryboardSegueIdentifier = @"SSIDashboardStoryboardSegueIdentifier";
 
@@ -58,7 +59,17 @@ static NSString *SSIDashboardStoryboardSegueIdentifier = @"SSIDashboardStoryboar
 }
 
 - (IBAction)maybeLaterButtonAction:(id)sender {
-    [self performSegueWithIdentifier:SSIDashboardStoryboardSegueIdentifier sender:self];
+//    [self performSegueWithIdentifier:SSIDashboardStoryboardSegueIdentifier sender:self];
+    
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:@"Title" message:@"Message..." style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:@"Cool" style:SSIAlertActionButtonStyleCancel handler:^{ [self dismissViewControllerAnimated:YES completion:nil]; }]];
+    [alert addAction:[SSIAlertAction title:@"OK" style:SSIAlertActionButtonStyleDefault handler:^{
+        [self dismissViewControllerAnimated:NO completion:^{
+            [self performSegueWithIdentifier:SSIDashboardStoryboardSegueIdentifier sender:self];
+        }];
+    }]];
+    [self presentViewController:alert animated:YES completion:nil];
+    
 }
 
 

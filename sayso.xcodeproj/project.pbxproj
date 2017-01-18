@@ -41,6 +41,27 @@
 		132CD0061E268DCC008F9E7A /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CD0051E268DCC008F9E7A /* QCMethod.m */; };
 		132CD0101E26E54C008F9E7A /* UIImage+SSIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CD00F1E26E54C008F9E7A /* UIImage+SSIImage.m */; };
 		1337C6581E2D139100B6FF03 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1337C6571E2D139100B6FF03 /* Dashboard.storyboard */; };
+		13DE61B41E2FE5CD0012C912 /* SSIChromePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61B11E2FE5CD0012C912 /* SSIChromePresentationController.m */; };
+		13DE61B51E2FE5CD0012C912 /* SSIVanillaPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61B31E2FE5CD0012C912 /* SSIVanillaPresentationController.m */; };
+		13DE61BC1E2FE5D70012C912 /* SSIDropDownDismissAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61B71E2FE5D70012C912 /* SSIDropDownDismissAnimatedTransitioning.m */; };
+		13DE61BD1E2FE5D70012C912 /* SSIFadeDismissAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61B91E2FE5D70012C912 /* SSIFadeDismissAnimatedTransitioning.m */; };
+		13DE61BE1E2FE5D70012C912 /* SSIPopUpDismissAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61BB1E2FE5D70012C912 /* SSIPopUpDismissAnimatedTransitioning.m */; };
+		13DE61C71E2FE5E30012C912 /* SSIDropDownSpringyPresentAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61C01E2FE5E30012C912 /* SSIDropDownSpringyPresentAnimatedTransitioning.m */; };
+		13DE61C81E2FE5E30012C912 /* SSIFadePresentAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61C21E2FE5E30012C912 /* SSIFadePresentAnimatedTransitioning.m */; };
+		13DE61C91E2FE5E30012C912 /* SSIPopUpSpringyPresentAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61C41E2FE5E30012C912 /* SSIPopUpSpringyPresentAnimatedTransitioning.m */; };
+		13DE61CA1E2FE5E30012C912 /* SSIVerticalCarouselSpringyPresentAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61C61E2FE5E30012C912 /* SSIVerticalCarouselSpringyPresentAnimatedTransitioning.m */; };
+		13DE61D31E2FE5EC0012C912 /* SSIGiraffeTransitioningProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61CC1E2FE5EC0012C912 /* SSIGiraffeTransitioningProxy.m */; };
+		13DE61D41E2FE5EC0012C912 /* SSILionTransitioningProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61CE1E2FE5EC0012C912 /* SSILionTransitioningProxy.m */; };
+		13DE61D51E2FE5EC0012C912 /* SSITigerTransitioningProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61D01E2FE5EC0012C912 /* SSITigerTransitioningProxy.m */; };
+		13DE61D61E2FE5EC0012C912 /* SSIZebraTransitioningProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61D21E2FE5EC0012C912 /* SSIZebraTransitioningProxy.m */; };
+		13DE61E41E2FE6D80012C912 /* SSIAlertViewControllerAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61E31E2FE6D80012C912 /* SSIAlertViewControllerAbstract.m */; };
+		13DE61E71E2FE6E20012C912 /* SSIAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61E61E2FE6E20012C912 /* SSIAlertController.m */; };
+		13DE61EA1E2FE7360012C912 /* SSIViewControllerAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61E91E2FE7360012C912 /* SSIViewControllerAbstract.m */; };
+		13DE61EC1E2FE96F0012C912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DE61EB1E2FE96F0012C912 /* Assets.xcassets */; };
+		13DE61F11E2FF79C0012C912 /* Playground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DE61F01E2FF79C0012C912 /* Playground.storyboard */; };
+		13DE61F51E2FF7D10012C912 /* SSIPlaygroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61F41E2FF7D10012C912 /* SSIPlaygroundViewController.m */; };
+		ACA2846742F6271A6AEBE94C /* libPods-saysoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E8DE314572FD28A3F03809 /* libPods-saysoTests.a */; };
+		F2347B5C09A6ECF935579502 /* libPods-sayso.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185D82CE2908FE261334830A /* libPods-sayso.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +133,49 @@
 		132CD00E1E26E54C008F9E7A /* UIImage+SSIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SSIImage.h"; sourceTree = "<group>"; };
 		132CD00F1E26E54C008F9E7A /* UIImage+SSIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SSIImage.m"; sourceTree = "<group>"; };
 		1337C6571E2D139100B6FF03 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		13DE61B01E2FE5CD0012C912 /* SSIChromePresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIChromePresentationController.h; sourceTree = "<group>"; };
+		13DE61B11E2FE5CD0012C912 /* SSIChromePresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIChromePresentationController.m; sourceTree = "<group>"; };
+		13DE61B21E2FE5CD0012C912 /* SSIVanillaPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIVanillaPresentationController.h; sourceTree = "<group>"; };
+		13DE61B31E2FE5CD0012C912 /* SSIVanillaPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIVanillaPresentationController.m; sourceTree = "<group>"; };
+		13DE61B61E2FE5D70012C912 /* SSIDropDownDismissAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIDropDownDismissAnimatedTransitioning.h; sourceTree = "<group>"; };
+		13DE61B71E2FE5D70012C912 /* SSIDropDownDismissAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIDropDownDismissAnimatedTransitioning.m; sourceTree = "<group>"; };
+		13DE61B81E2FE5D70012C912 /* SSIFadeDismissAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIFadeDismissAnimatedTransitioning.h; sourceTree = "<group>"; };
+		13DE61B91E2FE5D70012C912 /* SSIFadeDismissAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIFadeDismissAnimatedTransitioning.m; sourceTree = "<group>"; };
+		13DE61BA1E2FE5D70012C912 /* SSIPopUpDismissAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIPopUpDismissAnimatedTransitioning.h; sourceTree = "<group>"; };
+		13DE61BB1E2FE5D70012C912 /* SSIPopUpDismissAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIPopUpDismissAnimatedTransitioning.m; sourceTree = "<group>"; };
+		13DE61BF1E2FE5E30012C912 /* SSIDropDownSpringyPresentAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIDropDownSpringyPresentAnimatedTransitioning.h; sourceTree = "<group>"; };
+		13DE61C01E2FE5E30012C912 /* SSIDropDownSpringyPresentAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIDropDownSpringyPresentAnimatedTransitioning.m; sourceTree = "<group>"; };
+		13DE61C11E2FE5E30012C912 /* SSIFadePresentAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIFadePresentAnimatedTransitioning.h; sourceTree = "<group>"; };
+		13DE61C21E2FE5E30012C912 /* SSIFadePresentAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIFadePresentAnimatedTransitioning.m; sourceTree = "<group>"; };
+		13DE61C31E2FE5E30012C912 /* SSIPopUpSpringyPresentAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIPopUpSpringyPresentAnimatedTransitioning.h; sourceTree = "<group>"; };
+		13DE61C41E2FE5E30012C912 /* SSIPopUpSpringyPresentAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIPopUpSpringyPresentAnimatedTransitioning.m; sourceTree = "<group>"; };
+		13DE61C51E2FE5E30012C912 /* SSIVerticalCarouselSpringyPresentAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIVerticalCarouselSpringyPresentAnimatedTransitioning.h; sourceTree = "<group>"; };
+		13DE61C61E2FE5E30012C912 /* SSIVerticalCarouselSpringyPresentAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIVerticalCarouselSpringyPresentAnimatedTransitioning.m; sourceTree = "<group>"; };
+		13DE61CB1E2FE5EC0012C912 /* SSIGiraffeTransitioningProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIGiraffeTransitioningProxy.h; sourceTree = "<group>"; };
+		13DE61CC1E2FE5EC0012C912 /* SSIGiraffeTransitioningProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIGiraffeTransitioningProxy.m; sourceTree = "<group>"; };
+		13DE61CD1E2FE5EC0012C912 /* SSILionTransitioningProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSILionTransitioningProxy.h; sourceTree = "<group>"; };
+		13DE61CE1E2FE5EC0012C912 /* SSILionTransitioningProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSILionTransitioningProxy.m; sourceTree = "<group>"; };
+		13DE61CF1E2FE5EC0012C912 /* SSITigerTransitioningProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSITigerTransitioningProxy.h; sourceTree = "<group>"; };
+		13DE61D01E2FE5EC0012C912 /* SSITigerTransitioningProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSITigerTransitioningProxy.m; sourceTree = "<group>"; };
+		13DE61D11E2FE5EC0012C912 /* SSIZebraTransitioningProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIZebraTransitioningProxy.h; sourceTree = "<group>"; };
+		13DE61D21E2FE5EC0012C912 /* SSIZebraTransitioningProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIZebraTransitioningProxy.m; sourceTree = "<group>"; };
+		13DE61D71E2FE60A0012C912 /* SSIPresentationAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSIPresentationAnimatedTransitioning.h; sourceTree = "<group>"; };
+		13DE61E21E2FE6D80012C912 /* SSIAlertViewControllerAbstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIAlertViewControllerAbstract.h; sourceTree = "<group>"; };
+		13DE61E31E2FE6D80012C912 /* SSIAlertViewControllerAbstract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIAlertViewControllerAbstract.m; sourceTree = "<group>"; };
+		13DE61E51E2FE6E20012C912 /* SSIAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIAlertController.h; sourceTree = "<group>"; };
+		13DE61E61E2FE6E20012C912 /* SSIAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIAlertController.m; sourceTree = "<group>"; };
+		13DE61E81E2FE7360012C912 /* SSIViewControllerAbstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIViewControllerAbstract.h; sourceTree = "<group>"; };
+		13DE61E91E2FE7360012C912 /* SSIViewControllerAbstract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIViewControllerAbstract.m; sourceTree = "<group>"; };
+		13DE61EB1E2FE96F0012C912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13DE61F01E2FF79C0012C912 /* Playground.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Playground.storyboard; sourceTree = "<group>"; };
+		13DE61F31E2FF7D10012C912 /* SSIPlaygroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIPlaygroundViewController.h; sourceTree = "<group>"; };
+		13DE61F41E2FF7D10012C912 /* SSIPlaygroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIPlaygroundViewController.m; sourceTree = "<group>"; };
+		185D82CE2908FE261334830A /* libPods-sayso.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sayso.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E8DE314572FD28A3F03809 /* libPods-saysoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-saysoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F6EF3FB809514756C05D9E5 /* Pods-saysoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saysoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-saysoTests/Pods-saysoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DD5F1BFF301763F008B2D86 /* Pods-sayso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sayso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sayso/Pods-sayso.debug.xcconfig"; sourceTree = "<group>"; };
+		BD2BB45A196FB380C614DB0B /* Pods-sayso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sayso.release.xcconfig"; path = "Pods/Target Support Files/Pods-sayso/Pods-sayso.release.xcconfig"; sourceTree = "<group>"; };
+		E5FEA97BAED33FFA5CA5945E /* Pods-saysoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saysoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-saysoTests/Pods-saysoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2347B5C09A6ECF935579502 /* libPods-sayso.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA2846742F6271A6AEBE94C /* libPods-saysoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,8 +303,10 @@
 		1325C4021E2FE04100B35C07 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				13DE61EB1E2FE96F0012C912 /* Assets.xcassets */,
+				13DE61E01E2FE6A50012C912 /* Controllers */,
 			);
-			name = Alert;
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		132CCFD21E268D68008F9E7A = {
@@ -247,6 +315,8 @@
 				132CCFDD1E268D68008F9E7A /* sayso */,
 				132CCFF71E268D68008F9E7A /* saysoTests */,
 				132CCFDC1E268D68008F9E7A /* Products */,
+				712BD79787CBA7AF295B72E1 /* Pods */,
+				EAF0DEB0F4B9E7B62AD11C5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,6 +332,7 @@
 		132CCFDD1E268D68008F9E7A /* sayso */ = {
 			isa = PBXGroup;
 			children = (
+				13DE61ED1E2FF6DF0012C912 /* Playground */,
 				1337C6591E2D14F700B6FF03 /* Launch */,
 				1325C3BF1E2ED08F00B35C07 /* Register */,
 				1350A2CB1E2D131200E7444F /* Dashboard */,
@@ -289,6 +360,8 @@
 				132CCFDF1E268D68008F9E7A /* main.m */,
 				1325C3A51E2E5C0C00B35C07 /* UIColor+SSI.h */,
 				1325C3A61E2E5C0C00B35C07 /* UIColor+SSI.m */,
+				13DE61E81E2FE7360012C912 /* SSIViewControllerAbstract.h */,
+				13DE61E91E2FE7360012C912 /* SSIViewControllerAbstract.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -315,10 +388,11 @@
 		1336D49C1E2FE194008AB597 /* Transitioning */ = {
 			isa = PBXGroup;
 			children = (
-				1336D4A01E2FE1F9008AB597 /* Proxies */,
-				1336D49F1E2FE1D3008AB597 /* Presenting */,
-				1336D49E1E2FE1C4008AB597 /* Dismissing */,
+				13DE61D71E2FE60A0012C912 /* SSIPresentationAnimatedTransitioning.h */,
 				1336D49D1E2FE1AD008AB597 /* Controllers */,
+				1336D49E1E2FE1C4008AB597 /* Dismissing */,
+				1336D49F1E2FE1D3008AB597 /* Presenting */,
+				1336D4A01E2FE1F9008AB597 /* Proxies */,
 			);
 			path = Transitioning;
 			sourceTree = "<group>";
@@ -326,6 +400,10 @@
 		1336D49D1E2FE1AD008AB597 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				13DE61B01E2FE5CD0012C912 /* SSIChromePresentationController.h */,
+				13DE61B11E2FE5CD0012C912 /* SSIChromePresentationController.m */,
+				13DE61B21E2FE5CD0012C912 /* SSIVanillaPresentationController.h */,
+				13DE61B31E2FE5CD0012C912 /* SSIVanillaPresentationController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -333,6 +411,12 @@
 		1336D49E1E2FE1C4008AB597 /* Dismissing */ = {
 			isa = PBXGroup;
 			children = (
+				13DE61B61E2FE5D70012C912 /* SSIDropDownDismissAnimatedTransitioning.h */,
+				13DE61B71E2FE5D70012C912 /* SSIDropDownDismissAnimatedTransitioning.m */,
+				13DE61B81E2FE5D70012C912 /* SSIFadeDismissAnimatedTransitioning.h */,
+				13DE61B91E2FE5D70012C912 /* SSIFadeDismissAnimatedTransitioning.m */,
+				13DE61BA1E2FE5D70012C912 /* SSIPopUpDismissAnimatedTransitioning.h */,
+				13DE61BB1E2FE5D70012C912 /* SSIPopUpDismissAnimatedTransitioning.m */,
 			);
 			path = Dismissing;
 			sourceTree = "<group>";
@@ -340,6 +424,14 @@
 		1336D49F1E2FE1D3008AB597 /* Presenting */ = {
 			isa = PBXGroup;
 			children = (
+				13DE61BF1E2FE5E30012C912 /* SSIDropDownSpringyPresentAnimatedTransitioning.h */,
+				13DE61C01E2FE5E30012C912 /* SSIDropDownSpringyPresentAnimatedTransitioning.m */,
+				13DE61C11E2FE5E30012C912 /* SSIFadePresentAnimatedTransitioning.h */,
+				13DE61C21E2FE5E30012C912 /* SSIFadePresentAnimatedTransitioning.m */,
+				13DE61C31E2FE5E30012C912 /* SSIPopUpSpringyPresentAnimatedTransitioning.h */,
+				13DE61C41E2FE5E30012C912 /* SSIPopUpSpringyPresentAnimatedTransitioning.m */,
+				13DE61C51E2FE5E30012C912 /* SSIVerticalCarouselSpringyPresentAnimatedTransitioning.h */,
+				13DE61C61E2FE5E30012C912 /* SSIVerticalCarouselSpringyPresentAnimatedTransitioning.m */,
 			);
 			path = Presenting;
 			sourceTree = "<group>";
@@ -347,6 +439,14 @@
 		1336D4A01E2FE1F9008AB597 /* Proxies */ = {
 			isa = PBXGroup;
 			children = (
+				13DE61CB1E2FE5EC0012C912 /* SSIGiraffeTransitioningProxy.h */,
+				13DE61CC1E2FE5EC0012C912 /* SSIGiraffeTransitioningProxy.m */,
+				13DE61CD1E2FE5EC0012C912 /* SSILionTransitioningProxy.h */,
+				13DE61CE1E2FE5EC0012C912 /* SSILionTransitioningProxy.m */,
+				13DE61CF1E2FE5EC0012C912 /* SSITigerTransitioningProxy.h */,
+				13DE61D01E2FE5EC0012C912 /* SSITigerTransitioningProxy.m */,
+				13DE61D11E2FE5EC0012C912 /* SSIZebraTransitioningProxy.h */,
+				13DE61D21E2FE5EC0012C912 /* SSIZebraTransitioningProxy.m */,
 			);
 			path = Proxies;
 			sourceTree = "<group>";
@@ -372,6 +472,63 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
+		13DE61E01E2FE6A50012C912 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13DE61E51E2FE6E20012C912 /* SSIAlertController.h */,
+				13DE61E61E2FE6E20012C912 /* SSIAlertController.m */,
+				13DE61E11E2FE6BB0012C912 /* Abstracts */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		13DE61E11E2FE6BB0012C912 /* Abstracts */ = {
+			isa = PBXGroup;
+			children = (
+				13DE61E21E2FE6D80012C912 /* SSIAlertViewControllerAbstract.h */,
+				13DE61E31E2FE6D80012C912 /* SSIAlertViewControllerAbstract.m */,
+			);
+			path = Abstracts;
+			sourceTree = "<group>";
+		};
+		13DE61ED1E2FF6DF0012C912 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				13DE61F21E2FF7B80012C912 /* Controllers */,
+				13DE61F01E2FF79C0012C912 /* Playground.storyboard */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		13DE61F21E2FF7B80012C912 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13DE61F31E2FF7D10012C912 /* SSIPlaygroundViewController.h */,
+				13DE61F41E2FF7D10012C912 /* SSIPlaygroundViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		712BD79787CBA7AF295B72E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DD5F1BFF301763F008B2D86 /* Pods-sayso.debug.xcconfig */,
+				BD2BB45A196FB380C614DB0B /* Pods-sayso.release.xcconfig */,
+				4F6EF3FB809514756C05D9E5 /* Pods-saysoTests.debug.xcconfig */,
+				E5FEA97BAED33FFA5CA5945E /* Pods-saysoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAF0DEB0F4B9E7B62AD11C5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185D82CE2908FE261334830A /* libPods-sayso.a */,
+				26E8DE314572FD28A3F03809 /* libPods-saysoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -379,9 +536,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 132CCFFD1E268D68008F9E7A /* Build configuration list for PBXNativeTarget "sayso" */;
 			buildPhases = (
+				EDD06FEFD3452A14E6D7126E /* [CP] Check Pods Manifest.lock */,
 				132CCFD71E268D68008F9E7A /* Sources */,
 				132CCFD81E268D68008F9E7A /* Frameworks */,
 				132CCFD91E268D68008F9E7A /* Resources */,
+				F2507F1D947A58021D65278B /* [CP] Embed Pods Frameworks */,
+				16241B42D6565D6B7A8CF1FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -396,9 +556,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 132CD0001E268D68008F9E7A /* Build configuration list for PBXNativeTarget "saysoTests" */;
 			buildPhases = (
+				43F6BBF293E40D3C4A1C671F /* [CP] Check Pods Manifest.lock */,
 				132CCFF01E268D68008F9E7A /* Sources */,
 				132CCFF11E268D68008F9E7A /* Frameworks */,
 				132CCFF21E268D68008F9E7A /* Resources */,
+				ED8CCBADE1612E907FDD6157 /* [CP] Embed Pods Frameworks */,
+				673EFB69B836A67B9DD96BDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -458,8 +621,10 @@
 			files = (
 				132CCFEE1E268D68008F9E7A /* LaunchScreen.storyboard in Resources */,
 				1325C3E71E2ED57C00B35C07 /* giftcard.qc in Resources */,
+				13DE61F11E2FF79C0012C912 /* Playground.storyboard in Resources */,
 				1325C3921E2D1F4600B35C07 /* Launch.storyboard in Resources */,
 				132CCFEB1E268D68008F9E7A /* Assets.xcassets in Resources */,
+				13DE61EC1E2FE96F0012C912 /* Assets.xcassets in Resources */,
 				132CCFE91E268D68008F9E7A /* Main.storyboard in Resources */,
 				1337C6581E2D139100B6FF03 /* Dashboard.storyboard in Resources */,
 				1325C3FD1E2F982200B35C07 /* toolbar.qc in Resources */,
@@ -481,29 +646,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16241B42D6565D6B7A8CF1FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sayso/Pods-sayso-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43F6BBF293E40D3C4A1C671F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		673EFB69B836A67B9DD96BDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-saysoTests/Pods-saysoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED8CCBADE1612E907FDD6157 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-saysoTests/Pods-saysoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDD06FEFD3452A14E6D7126E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2507F1D947A58021D65278B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sayso/Pods-sayso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		132CCFD71E268D68008F9E7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13DE61D61E2FE5EC0012C912 /* SSIZebraTransitioningProxy.m in Sources */,
 				1325C3D11E2ED0F400B35C07 /* SSIRegistrationSocialAnimation.m in Sources */,
 				1325C3A71E2E5C0C00B35C07 /* UIColor+SSI.m in Sources */,
 				1325C3D01E2ED0F400B35C07 /* SSIRegistrationLevelUpAnimation.m in Sources */,
+				13DE61E71E2FE6E20012C912 /* SSIAlertController.m in Sources */,
+				13DE61CA1E2FE5E30012C912 /* SSIVerticalCarouselSpringyPresentAnimatedTransitioning.m in Sources */,
 				132CCFE61E268D68008F9E7A /* ViewController.m in Sources */,
+				13DE61E41E2FE6D80012C912 /* SSIAlertViewControllerAbstract.m in Sources */,
 				1325C3F51E2EF3BB00B35C07 /* SSIToolBar.m in Sources */,
+				13DE61BC1E2FE5D70012C912 /* SSIDropDownDismissAnimatedTransitioning.m in Sources */,
 				1325C3CF1E2ED0F400B35C07 /* SSIRegistrationGiftCardAnimation.m in Sources */,
+				13DE61BE1E2FE5D70012C912 /* SSIPopUpDismissAnimatedTransitioning.m in Sources */,
 				1325C3DB1E2ED0FF00B35C07 /* SSIRegisterPageContentViewController.m in Sources */,
+				13DE61B41E2FE5CD0012C912 /* SSIChromePresentationController.m in Sources */,
 				1325C3D31E2ED0F400B35C07 /* SSIRegistrationWelcomeAnimation.m in Sources */,
+				13DE61D51E2FE5EC0012C912 /* SSITigerTransitioningProxy.m in Sources */,
+				13DE61B51E2FE5CD0012C912 /* SSIVanillaPresentationController.m in Sources */,
 				1325C3CE1E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.m in Sources */,
 				1325C3DC1E2ED0FF00B35C07 /* SSIRegisterPageViewController.m in Sources */,
+				13DE61C71E2FE5E30012C912 /* SSIDropDownSpringyPresentAnimatedTransitioning.m in Sources */,
 				1325C3DA1E2ED0FF00B35C07 /* SSIRegisterContainerViewController.m in Sources */,
+				13DE61C91E2FE5E30012C912 /* SSIPopUpSpringyPresentAnimatedTransitioning.m in Sources */,
 				1325C4011E2FBE9500B35C07 /* SSILaunchScreenAnimation.m in Sources */,
+				13DE61F51E2FF7D10012C912 /* SSIPlaygroundViewController.m in Sources */,
+				13DE61BD1E2FE5D70012C912 /* SSIFadeDismissAnimatedTransitioning.m in Sources */,
+				13DE61EA1E2FE7360012C912 /* SSIViewControllerAbstract.m in Sources */,
 				132CCFE31E268D68008F9E7A /* AppDelegate.m in Sources */,
 				1325C3F01E2ED5EB00B35C07 /* SSIDashboardViewController.m in Sources */,
 				132CD0061E268DCC008F9E7A /* QCMethod.m in Sources */,
+				13DE61D31E2FE5EC0012C912 /* SSIGiraffeTransitioningProxy.m in Sources */,
 				1325C3F61E2EF3BB00B35C07 /* SSIToolBar+SSI.m in Sources */,
+				13DE61C81E2FE5E30012C912 /* SSIFadePresentAnimatedTransitioning.m in Sources */,
 				132CCFE01E268D68008F9E7A /* main.m in Sources */,
 				132CD0101E26E54C008F9E7A /* UIImage+SSIImage.m in Sources */,
+				13DE61D41E2FE5EC0012C912 /* SSILionTransitioningProxy.m in Sources */,
 				1325C3D21E2ED0F400B35C07 /* SSIRegistrationSurveysAnimation.m in Sources */,
 				1325C3FB1E2EF55700B35C07 /* SSILaunchViewController.m in Sources */,
 			);
@@ -639,6 +914,7 @@
 		};
 		132CCFFE1E268D68008F9E7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD5F1BFF301763F008B2D86 /* Pods-sayso.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 75AW5Y3K23;
@@ -652,6 +928,7 @@
 		};
 		132CCFFF1E268D68008F9E7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD2BB45A196FB380C614DB0B /* Pods-sayso.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 75AW5Y3K23;
@@ -665,6 +942,7 @@
 		};
 		132CD0011E268D68008F9E7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6EF3FB809514756C05D9E5 /* Pods-saysoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 75AW5Y3K23;
@@ -678,6 +956,7 @@
 		};
 		132CD0021E268D68008F9E7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5FEA97BAED33FFA5CA5945E /* Pods-saysoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 75AW5Y3K23;
