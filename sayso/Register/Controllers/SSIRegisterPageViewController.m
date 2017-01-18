@@ -39,7 +39,6 @@ static NSString *SSIRegisterPageContentViewControllerIdentifier = @"SSIRegisterP
     [self setDelegate:self];
 
     __weak SSIRegisterPageViewController *weakSelf = self;
-
     [self setViewControllers:@[[self viewControllerAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:^(BOOL finished) {
         [weakSelf.pageControl setNumberOfPages:[weakSelf.pageImages count]];
     }];

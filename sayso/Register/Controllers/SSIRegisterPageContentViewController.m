@@ -31,9 +31,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
     [self.animation addViewDidAppearAnimation];
 }
 

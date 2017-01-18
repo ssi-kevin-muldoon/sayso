@@ -9,7 +9,7 @@
 #import "SSIRegisterContainerViewController.h"
 #import "SSIRegisterPageViewController.h"
 
-static NSString *SSIDashboardStoryboardSegueIdentifier = @"DashboardStoryboardSegueIdentifier";
+static NSString *SSIDashboardStoryboardSegueIdentifier = @"SSIDashboardStoryboardSegueIdentifier";
 
 @interface SSIRegisterContainerViewController ()
 @property (strong, nonatomic) SSIRegisterPageViewController *pageViewController;

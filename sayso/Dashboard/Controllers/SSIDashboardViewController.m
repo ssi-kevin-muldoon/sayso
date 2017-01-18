@@ -18,9 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNeedsStatusBarAppearanceUpdate];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"saysoNavigationBarLogo"]];
-    
+    [self.navigationItem setHidesBackButton:YES];
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -54,7 +54,7 @@
 
 - (BOOL)prefersStatusBarHidden {
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-
+    self.navigationController.navigationBarHidden = NO;
     return NO;
 }
 

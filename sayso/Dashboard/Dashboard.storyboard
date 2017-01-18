@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v0W-mi-IJq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3tj-Mh-HhV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -108,7 +108,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfI-KN-CyS" userLabel="SubNavigation View">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-H7-Mrg" userLabel="Level View">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
@@ -204,7 +204,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0039215686269999999" green="0.3411764706" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0078431372549019607" green="0.46666666666666667" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="SpG-qD-AWb" firstAttribute="leading" secondItem="qJf-H7-Mrg" secondAttribute="trailing" constant="8" id="1pc-0u-lrn"/>
                                     <constraint firstItem="qJf-H7-Mrg" firstAttribute="leading" secondItem="SfI-KN-CyS" secondAttribute="leading" id="7on-2H-5Mh"/>
@@ -247,24 +247,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTw-4a-m5x" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2018.4000000000001" y="138.98050974512745"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Xz2-ay-86G">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jfY-gc-ccn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v0W-mi-IJq" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ppO-gU-6Je">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="3tj-Mh-HhV" kind="relationship" relationship="rootViewController" id="qG4-S5-hRM"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="1079.2" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
