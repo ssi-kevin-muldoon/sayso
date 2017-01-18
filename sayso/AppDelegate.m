@@ -28,6 +28,7 @@
         [[UINavigationBar appearance] setTranslucent:NO];
         
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        
 
     }
     return self;
@@ -36,9 +37,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [application setStatusBarHidden:NO];
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
-    
+    [application setStatusBarHidden:YES];
     return YES;
 }
 

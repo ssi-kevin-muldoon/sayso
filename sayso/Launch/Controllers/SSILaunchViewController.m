@@ -1,22 +1,28 @@
 //
-//  SSILaunchPageViewController.m
+//  SSILaunchViewController.m
 //  sayso
 //
 //  Created by Kevin Muldoon on 1/16/17.
 //  Copyright © 2017 Survey Sampling International, LLC. All rights reserved.
 //
 
-#import "SSILaunchPageViewController.h"
+#import "SSILaunchViewController.h"
 
-@interface SSILaunchPageViewController ()
+static NSString *SSIDashboardStoryboardSegueIdentifier = @"DashboardStoryboardSegueIdentifier";
+static NSString *SSIRegisterStoryboardSegueIdentifier = @"RegisterStoryboardSegueIdentifier";
+
+@interface SSILaunchViewController ()
 
 @end
 
-@implementation SSILaunchPageViewController
+@implementation SSILaunchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self performSelector:@selector(performSegue:) withObject:self afterDelay:1.6f];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +39,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)performSegue:(id)sender {
+    [self performSegueWithIdentifier:SSIRegisterStoryboardSegueIdentifier sender:self];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
 
 @end

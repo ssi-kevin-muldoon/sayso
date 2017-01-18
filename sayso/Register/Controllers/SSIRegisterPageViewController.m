@@ -131,7 +131,6 @@ static NSString *SSIRegisterPageContentViewControllerIdentifier = @"SSIRegisterP
         _animations = @[
                         [SSIRegistrationWelcomeAnimation class],
                         [SSIRegistrationSurveysAnimation class],
-                        [SSIRegistrationAbilitiesAnimation class],
                         [SSIRegistrationLevelUpAnimation class],
                         [SSIRegistrationGiftCardAnimation class],
                         [SSIRegistrationSocialAnimation class]
@@ -144,7 +143,6 @@ static NSString *SSIRegisterPageContentViewControllerIdentifier = @"SSIRegisterP
     if (!_pageImages) {
         _pageImages = @[
                         @"page1.png",
-                        @"page2.png",
                         @"page2.png",
                         @"page3.png",
                         @"page3.png",
@@ -159,10 +157,9 @@ static NSString *SSIRegisterPageContentViewControllerIdentifier = @"SSIRegisterP
         _pageTitles = @[
                         @"Welcome to sayso!",
                         @"Take surveys",
-                        @"Unlock abilities",
                         @"Level up!",
                         @"Fabulous prizes!",
-                        @"We're very social!"
+                        @"Spread the word!"
                         ];
     }
     return _pageTitles;
@@ -171,12 +168,11 @@ static NSString *SSIRegisterPageContentViewControllerIdentifier = @"SSIRegisterP
 - (NSArray *)pageBodys {
     if (!_pageBodys) {
         _pageBodys = @[
-                       @"The exciting polling app where you earn points, badges and prizes for participating in quizzes and surveys.",
-                       @"Choose from a wide variety of quizzes and surveys. New ones every day. Always something to do!",
-                       @"Unlock abilities to access high-value surveys which quickly earn $10 coins! Earn badges that recognize your experiences and share with friends.",
-                       @"Every 10,000 points earns a level up and awards a coin redeemable for $10 prizes. Full members access high value surveys, so it doesn't take long to win prizes.",
-                       @"Choose from iTunes gift cards, Amazon gift card, PayPal credit or even donate to your favorite charity.",
-                       @"Tweet about that new gift card you earned! Facebook the charity you donated to. It's OK. You've earned bragging rights."
+                       @"Earn points, badges and prizes by taking fun quizzes and surveys.",
+                       @"Tons of quizzes and surveys available every day. Always more points and prizes to earn.",
+                       @"With every 10,000 points you earn, you win a coin redeemable for $10 prizes.",
+                       @"Choose from Amazon or iTunes gift cards, PayPal credit or even donate to your favorite charity.",
+                       @"Tweet about the gift card you earned! Facebook the charity you donated to. It's OK. You've earned bragging rights."
                        ];
     }
     return _pageBodys;

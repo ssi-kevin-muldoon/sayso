@@ -44,7 +44,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="qAF-kE-VI2"/>
                     <connections>
-                        <segue destination="Jh4-XU-6tr" kind="show" identifier="DashboardStoryboardSegue" id="CYe-WZ-Ayj"/>
+                        <segue destination="Jh4-XU-6tr" kind="show" identifier="DashboardStoryboardSegueIdentifier" id="CYe-WZ-Ayj"/>
+                        <segue destination="IEo-K0-x8h" kind="show" identifier="RegisterStoryboardSegueIdentifier" id="Bpi-JN-rBZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ln-W7-qng" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,7 +58,15 @@
                 <viewControllerPlaceholder storyboardName="Dashboard" id="Jh4-XU-6tr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Up-3F-pjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1611" y="116"/>
+            <point key="canvasLocation" x="1610" y="31"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="4YY-AW-oup">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" id="IEo-K0-x8h" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPb-QN-fZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="195"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cx4-9d-44d">

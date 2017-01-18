@@ -9,6 +9,8 @@
 #import "SSIRegisterContainerViewController.h"
 #import "SSIRegisterPageViewController.h"
 
+static NSString *SSIDashboardStoryboardSegueIdentifier = @"DashboardStoryboardSegueIdentifier";
+
 @interface SSIRegisterContainerViewController ()
 @property (strong, nonatomic) SSIRegisterPageViewController *pageViewController;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
@@ -56,7 +58,13 @@
 }
 
 - (IBAction)maybeLaterButtonAction:(id)sender {
-    NSLog(@"maybeLaterButtonAction");
+    [self performSegueWithIdentifier:SSIDashboardStoryboardSegueIdentifier sender:self];
 }
+
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 
 @end

@@ -8,19 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		1325C3921E2D1F4600B35C07 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3911E2D1F4600B35C07 /* Launch.storyboard */; };
-		1325C3951E2D203500B35C07 /* SSILaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3941E2D203500B35C07 /* SSILaunchViewController.m */; };
-		1325C3981E2D270100B35C07 /* SSILaunchPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3971E2D270100B35C07 /* SSILaunchPageViewController.m */; };
-		1325C39B1E2D286900B35C07 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1325C39A1E2D286900B35C07 /* Register.storyboard */; };
-		1325C39E1E2D28DA00B35C07 /* SSIRegisterContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C39D1E2D28DA00B35C07 /* SSIRegisterContainerViewController.m */; };
-		1325C3A11E2D28FE00B35C07 /* SSIRegisterPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3A01E2D28FE00B35C07 /* SSIRegisterPageViewController.m */; };
-		1325C3A41E2D2C4F00B35C07 /* SSIRegisterPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3A31E2D2C4F00B35C07 /* SSIRegisterPageContentViewController.m */; };
 		1325C3A71E2E5C0C00B35C07 /* UIColor+SSI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3A61E2E5C0C00B35C07 /* UIColor+SSI.m */; };
-		1325C3AF1E2E853800B35C07 /* SSIRegistrationWelcomeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3AE1E2E853800B35C07 /* SSIRegistrationWelcomeAnimation.m */; };
-		1325C3B21E2E998E00B35C07 /* SSIRegistrationSurveysAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3B11E2E998E00B35C07 /* SSIRegistrationSurveysAnimation.m */; };
-		1325C3B51E2EC2CA00B35C07 /* SSIRegistrationAbilitiesAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3B41E2EC2CA00B35C07 /* SSIRegistrationAbilitiesAnimation.m */; };
-		1325C3B81E2EC4DF00B35C07 /* SSIRegistrationLevelUpAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3B71E2EC4DF00B35C07 /* SSIRegistrationLevelUpAnimation.m */; };
-		1325C3BB1E2EC67600B35C07 /* SSIRegistrationGiftCardAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3BA1E2EC67600B35C07 /* SSIRegistrationGiftCardAnimation.m */; };
-		1325C3BE1E2ECB6400B35C07 /* SSIRegistrationSocialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3BD1E2ECB6400B35C07 /* SSIRegistrationSocialAnimation.m */; };
+		1325C3CE1E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3C31E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.m */; };
+		1325C3CF1E2ED0F400B35C07 /* SSIRegistrationGiftCardAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3C51E2ED0F400B35C07 /* SSIRegistrationGiftCardAnimation.m */; };
+		1325C3D01E2ED0F400B35C07 /* SSIRegistrationLevelUpAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3C71E2ED0F400B35C07 /* SSIRegistrationLevelUpAnimation.m */; };
+		1325C3D11E2ED0F400B35C07 /* SSIRegistrationSocialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3C91E2ED0F400B35C07 /* SSIRegistrationSocialAnimation.m */; };
+		1325C3D21E2ED0F400B35C07 /* SSIRegistrationSurveysAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3CB1E2ED0F400B35C07 /* SSIRegistrationSurveysAnimation.m */; };
+		1325C3D31E2ED0F400B35C07 /* SSIRegistrationWelcomeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3CD1E2ED0F400B35C07 /* SSIRegistrationWelcomeAnimation.m */; };
+		1325C3DA1E2ED0FF00B35C07 /* SSIRegisterContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3D51E2ED0FF00B35C07 /* SSIRegisterContainerViewController.m */; };
+		1325C3DB1E2ED0FF00B35C07 /* SSIRegisterPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3D71E2ED0FF00B35C07 /* SSIRegisterPageContentViewController.m */; };
+		1325C3DC1E2ED0FF00B35C07 /* SSIRegisterPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3D91E2ED0FF00B35C07 /* SSIRegisterPageViewController.m */; };
+		1325C3DE1E2ED10700B35C07 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3DD1E2ED10700B35C07 /* Register.storyboard */; };
+		1325C3E61E2ED57C00B35C07 /* abilities.qc in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3E01E2ED57C00B35C07 /* abilities.qc */; };
+		1325C3E71E2ED57C00B35C07 /* giftcard.qc in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3E11E2ED57C00B35C07 /* giftcard.qc */; };
+		1325C3E81E2ED57C00B35C07 /* levelup.qc in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3E21E2ED57C00B35C07 /* levelup.qc */; };
+		1325C3E91E2ED57C00B35C07 /* logo.qc in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3E31E2ED57C00B35C07 /* logo.qc */; };
+		1325C3EA1E2ED57C00B35C07 /* share.qc in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3E41E2ED57C00B35C07 /* share.qc */; };
+		1325C3EB1E2ED57C00B35C07 /* surveys.qc in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3E51E2ED57C00B35C07 /* surveys.qc */; };
+		1325C3F01E2ED5EB00B35C07 /* SSIDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3EF1E2ED5EB00B35C07 /* SSIDashboardViewController.m */; };
+		1325C3F51E2EF3BB00B35C07 /* SSIToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3F21E2EF3BB00B35C07 /* SSIToolBar.m */; };
+		1325C3F61E2EF3BB00B35C07 /* SSIToolBar+SSI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3F41E2EF3BB00B35C07 /* SSIToolBar+SSI.m */; };
+		1325C3FB1E2EF55700B35C07 /* SSILaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3FA1E2EF55700B35C07 /* SSILaunchViewController.m */; };
+		1325C3FD1E2F982200B35C07 /* toolbar.qc in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3FC1E2F982200B35C07 /* toolbar.qc */; };
 		132CCFE01E268D68008F9E7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFDF1E268D68008F9E7A /* main.m */; };
 		132CCFE31E268D68008F9E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFE21E268D68008F9E7A /* AppDelegate.m */; };
 		132CCFE61E268D68008F9E7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFE51E268D68008F9E7A /* ViewController.m */; };
@@ -29,8 +38,6 @@
 		132CCFEE1E268D68008F9E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132CCFEC1E268D68008F9E7A /* LaunchScreen.storyboard */; };
 		132CCFF91E268D68008F9E7A /* saysoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFF81E268D68008F9E7A /* saysoTests.m */; };
 		132CD0061E268DCC008F9E7A /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CD0051E268DCC008F9E7A /* QCMethod.m */; };
-		132CD00A1E268DFF008F9E7A /* SSIToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CD0091E268DFF008F9E7A /* SSIToolBar.m */; };
-		132CD00D1E26B5C1008F9E7A /* SSIToolBar+SSI.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CD00C1E26B5C1008F9E7A /* SSIToolBar+SSI.m */; };
 		132CD0101E26E54C008F9E7A /* UIImage+SSIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CD00F1E26E54C008F9E7A /* UIImage+SSIImage.m */; };
 		1337C6581E2D139100B6FF03 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1337C6571E2D139100B6FF03 /* Dashboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -47,32 +54,43 @@
 
 /* Begin PBXFileReference section */
 		1325C3911E2D1F4600B35C07 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
-		1325C3931E2D203500B35C07 /* SSILaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSILaunchViewController.h; sourceTree = "<group>"; };
-		1325C3941E2D203500B35C07 /* SSILaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSILaunchViewController.m; sourceTree = "<group>"; };
-		1325C3961E2D270100B35C07 /* SSILaunchPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSILaunchPageViewController.h; sourceTree = "<group>"; };
-		1325C3971E2D270100B35C07 /* SSILaunchPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSILaunchPageViewController.m; sourceTree = "<group>"; };
-		1325C39A1E2D286900B35C07 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
-		1325C39C1E2D28DA00B35C07 /* SSIRegisterContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegisterContainerViewController.h; sourceTree = "<group>"; };
-		1325C39D1E2D28DA00B35C07 /* SSIRegisterContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegisterContainerViewController.m; sourceTree = "<group>"; };
-		1325C39F1E2D28FE00B35C07 /* SSIRegisterPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegisterPageViewController.h; sourceTree = "<group>"; };
-		1325C3A01E2D28FE00B35C07 /* SSIRegisterPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegisterPageViewController.m; sourceTree = "<group>"; };
-		1325C3A21E2D2C4F00B35C07 /* SSIRegisterPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegisterPageContentViewController.h; sourceTree = "<group>"; };
-		1325C3A31E2D2C4F00B35C07 /* SSIRegisterPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegisterPageContentViewController.m; sourceTree = "<group>"; };
 		1325C3A51E2E5C0C00B35C07 /* UIColor+SSI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SSI.h"; sourceTree = "<group>"; };
 		1325C3A61E2E5C0C00B35C07 /* UIColor+SSI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SSI.m"; sourceTree = "<group>"; };
 		1325C3AC1E2E83BF00B35C07 /* SSIQuartzCodeAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIQuartzCodeAnimationProtocol.h; sourceTree = "<group>"; };
-		1325C3AD1E2E853800B35C07 /* SSIRegistrationWelcomeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationWelcomeAnimation.h; sourceTree = "<group>"; };
-		1325C3AE1E2E853800B35C07 /* SSIRegistrationWelcomeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationWelcomeAnimation.m; sourceTree = "<group>"; };
-		1325C3B01E2E998E00B35C07 /* SSIRegistrationSurveysAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationSurveysAnimation.h; sourceTree = "<group>"; };
-		1325C3B11E2E998E00B35C07 /* SSIRegistrationSurveysAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationSurveysAnimation.m; sourceTree = "<group>"; };
-		1325C3B31E2EC2CA00B35C07 /* SSIRegistrationAbilitiesAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationAbilitiesAnimation.h; sourceTree = "<group>"; };
-		1325C3B41E2EC2CA00B35C07 /* SSIRegistrationAbilitiesAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationAbilitiesAnimation.m; sourceTree = "<group>"; };
-		1325C3B61E2EC4DF00B35C07 /* SSIRegistrationLevelUpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationLevelUpAnimation.h; sourceTree = "<group>"; };
-		1325C3B71E2EC4DF00B35C07 /* SSIRegistrationLevelUpAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationLevelUpAnimation.m; sourceTree = "<group>"; };
-		1325C3B91E2EC67600B35C07 /* SSIRegistrationGiftCardAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationGiftCardAnimation.h; sourceTree = "<group>"; };
-		1325C3BA1E2EC67600B35C07 /* SSIRegistrationGiftCardAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationGiftCardAnimation.m; sourceTree = "<group>"; };
-		1325C3BC1E2ECB6400B35C07 /* SSIRegistrationSocialAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationSocialAnimation.h; sourceTree = "<group>"; };
-		1325C3BD1E2ECB6400B35C07 /* SSIRegistrationSocialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationSocialAnimation.m; sourceTree = "<group>"; };
+		1325C3C21E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationAbilitiesAnimation.h; sourceTree = "<group>"; };
+		1325C3C31E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationAbilitiesAnimation.m; sourceTree = "<group>"; };
+		1325C3C41E2ED0F400B35C07 /* SSIRegistrationGiftCardAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationGiftCardAnimation.h; sourceTree = "<group>"; };
+		1325C3C51E2ED0F400B35C07 /* SSIRegistrationGiftCardAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationGiftCardAnimation.m; sourceTree = "<group>"; };
+		1325C3C61E2ED0F400B35C07 /* SSIRegistrationLevelUpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationLevelUpAnimation.h; sourceTree = "<group>"; };
+		1325C3C71E2ED0F400B35C07 /* SSIRegistrationLevelUpAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationLevelUpAnimation.m; sourceTree = "<group>"; };
+		1325C3C81E2ED0F400B35C07 /* SSIRegistrationSocialAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationSocialAnimation.h; sourceTree = "<group>"; };
+		1325C3C91E2ED0F400B35C07 /* SSIRegistrationSocialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationSocialAnimation.m; sourceTree = "<group>"; };
+		1325C3CA1E2ED0F400B35C07 /* SSIRegistrationSurveysAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationSurveysAnimation.h; sourceTree = "<group>"; };
+		1325C3CB1E2ED0F400B35C07 /* SSIRegistrationSurveysAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationSurveysAnimation.m; sourceTree = "<group>"; };
+		1325C3CC1E2ED0F400B35C07 /* SSIRegistrationWelcomeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegistrationWelcomeAnimation.h; sourceTree = "<group>"; };
+		1325C3CD1E2ED0F400B35C07 /* SSIRegistrationWelcomeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegistrationWelcomeAnimation.m; sourceTree = "<group>"; };
+		1325C3D41E2ED0FF00B35C07 /* SSIRegisterContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegisterContainerViewController.h; sourceTree = "<group>"; };
+		1325C3D51E2ED0FF00B35C07 /* SSIRegisterContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegisterContainerViewController.m; sourceTree = "<group>"; };
+		1325C3D61E2ED0FF00B35C07 /* SSIRegisterPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegisterPageContentViewController.h; sourceTree = "<group>"; };
+		1325C3D71E2ED0FF00B35C07 /* SSIRegisterPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegisterPageContentViewController.m; sourceTree = "<group>"; };
+		1325C3D81E2ED0FF00B35C07 /* SSIRegisterPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIRegisterPageViewController.h; sourceTree = "<group>"; };
+		1325C3D91E2ED0FF00B35C07 /* SSIRegisterPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIRegisterPageViewController.m; sourceTree = "<group>"; };
+		1325C3DD1E2ED10700B35C07 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		1325C3E01E2ED57C00B35C07 /* abilities.qc */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = abilities.qc; sourceTree = "<group>"; };
+		1325C3E11E2ED57C00B35C07 /* giftcard.qc */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = giftcard.qc; sourceTree = "<group>"; };
+		1325C3E21E2ED57C00B35C07 /* levelup.qc */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = levelup.qc; sourceTree = "<group>"; };
+		1325C3E31E2ED57C00B35C07 /* logo.qc */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = logo.qc; sourceTree = "<group>"; };
+		1325C3E41E2ED57C00B35C07 /* share.qc */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = share.qc; sourceTree = "<group>"; };
+		1325C3E51E2ED57C00B35C07 /* surveys.qc */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = surveys.qc; sourceTree = "<group>"; };
+		1325C3EE1E2ED5EB00B35C07 /* SSIDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIDashboardViewController.h; sourceTree = "<group>"; };
+		1325C3EF1E2ED5EB00B35C07 /* SSIDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIDashboardViewController.m; sourceTree = "<group>"; };
+		1325C3F11E2EF3BB00B35C07 /* SSIToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIToolBar.h; sourceTree = "<group>"; };
+		1325C3F21E2EF3BB00B35C07 /* SSIToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIToolBar.m; sourceTree = "<group>"; };
+		1325C3F31E2EF3BB00B35C07 /* SSIToolBar+SSI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSIToolBar+SSI.h"; sourceTree = "<group>"; };
+		1325C3F41E2EF3BB00B35C07 /* SSIToolBar+SSI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSIToolBar+SSI.m"; sourceTree = "<group>"; };
+		1325C3F91E2EF55700B35C07 /* SSILaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSILaunchViewController.h; sourceTree = "<group>"; };
+		1325C3FA1E2EF55700B35C07 /* SSILaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSILaunchViewController.m; sourceTree = "<group>"; };
+		1325C3FC1E2F982200B35C07 /* toolbar.qc */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = toolbar.qc; sourceTree = "<group>"; };
 		132CCFDB1E268D68008F9E7A /* sayso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sayso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		132CCFDF1E268D68008F9E7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		132CCFE11E268D68008F9E7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,10 +106,6 @@
 		132CCFFA1E268D68008F9E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		132CD0041E268DCC008F9E7A /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
 		132CD0051E268DCC008F9E7A /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
-		132CD0081E268DFF008F9E7A /* SSIToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIToolBar.h; sourceTree = "<group>"; };
-		132CD0091E268DFF008F9E7A /* SSIToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIToolBar.m; sourceTree = "<group>"; };
-		132CD00B1E26B5C1008F9E7A /* SSIToolBar+SSI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSIToolBar+SSI.h"; sourceTree = "<group>"; };
-		132CD00C1E26B5C1008F9E7A /* SSIToolBar+SSI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSIToolBar+SSI.m"; sourceTree = "<group>"; };
 		132CD00E1E26E54C008F9E7A /* UIImage+SSIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SSIImage.h"; sourceTree = "<group>"; };
 		132CD00F1E26E54C008F9E7A /* UIImage+SSIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SSIImage.m"; sourceTree = "<group>"; };
 		1337C6571E2D139100B6FF03 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
@@ -115,38 +129,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1325C3991E2D27C600B35C07 /* Register */ = {
+		1325C3BF1E2ED08F00B35C07 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				1325C3A81E2E792E00B35C07 /* Animations */,
-				1325C39A1E2D286900B35C07 /* Register.storyboard */,
-				1325C39C1E2D28DA00B35C07 /* SSIRegisterContainerViewController.h */,
-				1325C39D1E2D28DA00B35C07 /* SSIRegisterContainerViewController.m */,
-				1325C39F1E2D28FE00B35C07 /* SSIRegisterPageViewController.h */,
-				1325C3A01E2D28FE00B35C07 /* SSIRegisterPageViewController.m */,
-				1325C3A21E2D2C4F00B35C07 /* SSIRegisterPageContentViewController.h */,
-				1325C3A31E2D2C4F00B35C07 /* SSIRegisterPageContentViewController.m */,
+				1325C3DD1E2ED10700B35C07 /* Register.storyboard */,
+				1325C3C01E2ED0AF00B35C07 /* Animations */,
+				1325C3C11E2ED0B800B35C07 /* Controllers */,
+				1325C3DF1E2ED54800B35C07 /* Resources */,
 			);
-			name = Register;
+			path = Register;
 			sourceTree = "<group>";
 		};
-		1325C3A81E2E792E00B35C07 /* Animations */ = {
+		1325C3C01E2ED0AF00B35C07 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				1325C3B31E2EC2CA00B35C07 /* SSIRegistrationAbilitiesAnimation.h */,
-				1325C3B41E2EC2CA00B35C07 /* SSIRegistrationAbilitiesAnimation.m */,
-				1325C3AD1E2E853800B35C07 /* SSIRegistrationWelcomeAnimation.h */,
-				1325C3AE1E2E853800B35C07 /* SSIRegistrationWelcomeAnimation.m */,
-				1325C3B01E2E998E00B35C07 /* SSIRegistrationSurveysAnimation.h */,
-				1325C3B11E2E998E00B35C07 /* SSIRegistrationSurveysAnimation.m */,
-				1325C3B61E2EC4DF00B35C07 /* SSIRegistrationLevelUpAnimation.h */,
-				1325C3B71E2EC4DF00B35C07 /* SSIRegistrationLevelUpAnimation.m */,
-				1325C3B91E2EC67600B35C07 /* SSIRegistrationGiftCardAnimation.h */,
-				1325C3BA1E2EC67600B35C07 /* SSIRegistrationGiftCardAnimation.m */,
-				1325C3BC1E2ECB6400B35C07 /* SSIRegistrationSocialAnimation.h */,
-				1325C3BD1E2ECB6400B35C07 /* SSIRegistrationSocialAnimation.m */,
+				1325C3C21E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.h */,
+				1325C3C31E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.m */,
+				1325C3C41E2ED0F400B35C07 /* SSIRegistrationGiftCardAnimation.h */,
+				1325C3C51E2ED0F400B35C07 /* SSIRegistrationGiftCardAnimation.m */,
+				1325C3C61E2ED0F400B35C07 /* SSIRegistrationLevelUpAnimation.h */,
+				1325C3C71E2ED0F400B35C07 /* SSIRegistrationLevelUpAnimation.m */,
+				1325C3C81E2ED0F400B35C07 /* SSIRegistrationSocialAnimation.h */,
+				1325C3C91E2ED0F400B35C07 /* SSIRegistrationSocialAnimation.m */,
+				1325C3CA1E2ED0F400B35C07 /* SSIRegistrationSurveysAnimation.h */,
+				1325C3CB1E2ED0F400B35C07 /* SSIRegistrationSurveysAnimation.m */,
+				1325C3CC1E2ED0F400B35C07 /* SSIRegistrationWelcomeAnimation.h */,
+				1325C3CD1E2ED0F400B35C07 /* SSIRegistrationWelcomeAnimation.m */,
 			);
-			name = Animations;
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		1325C3C11E2ED0B800B35C07 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1325C3D41E2ED0FF00B35C07 /* SSIRegisterContainerViewController.h */,
+				1325C3D51E2ED0FF00B35C07 /* SSIRegisterContainerViewController.m */,
+				1325C3D61E2ED0FF00B35C07 /* SSIRegisterPageContentViewController.h */,
+				1325C3D71E2ED0FF00B35C07 /* SSIRegisterPageContentViewController.m */,
+				1325C3D81E2ED0FF00B35C07 /* SSIRegisterPageViewController.h */,
+				1325C3D91E2ED0FF00B35C07 /* SSIRegisterPageViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1325C3DF1E2ED54800B35C07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1325C3E01E2ED57C00B35C07 /* abilities.qc */,
+				1325C3E11E2ED57C00B35C07 /* giftcard.qc */,
+				1325C3E21E2ED57C00B35C07 /* levelup.qc */,
+				1325C3E31E2ED57C00B35C07 /* logo.qc */,
+				1325C3E41E2ED57C00B35C07 /* share.qc */,
+				1325C3E51E2ED57C00B35C07 /* surveys.qc */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1325C3EC1E2ED59700B35C07 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1325C3EE1E2ED5EB00B35C07 /* SSIDashboardViewController.h */,
+				1325C3EF1E2ED5EB00B35C07 /* SSIDashboardViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1325C3ED1E2ED5BB00B35C07 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1325C3F11E2EF3BB00B35C07 /* SSIToolBar.h */,
+				1325C3F21E2EF3BB00B35C07 /* SSIToolBar.m */,
+				1325C3F31E2EF3BB00B35C07 /* SSIToolBar+SSI.h */,
+				1325C3F41E2EF3BB00B35C07 /* SSIToolBar+SSI.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		1325C3F71E2EF3E000B35C07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1325C3FC1E2F982200B35C07 /* toolbar.qc */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1325C3F81E2EF4CB00B35C07 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1325C3F91E2EF55700B35C07 /* SSILaunchViewController.h */,
+				1325C3FA1E2EF55700B35C07 /* SSILaunchViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		132CCFD21E268D68008F9E7A = {
@@ -170,10 +243,9 @@
 		132CCFDD1E268D68008F9E7A /* sayso */ = {
 			isa = PBXGroup;
 			children = (
-				1325C3991E2D27C600B35C07 /* Register */,
+				1325C3BF1E2ED08F00B35C07 /* Register */,
 				1337C6591E2D14F700B6FF03 /* Launch */,
 				1350A2CB1E2D131200E7444F /* Dashboard */,
-				132CD0071E268DD1008F9E7A /* SSIToolBar */,
 				132CCFE11E268D68008F9E7A /* AppDelegate.h */,
 				132CCFE21E268D68008F9E7A /* AppDelegate.m */,
 				132CCFE41E268D68008F9E7A /* ViewController.h */,
@@ -219,25 +291,11 @@
 			path = QuartzCode;
 			sourceTree = "<group>";
 		};
-		132CD0071E268DD1008F9E7A /* SSIToolBar */ = {
-			isa = PBXGroup;
-			children = (
-				132CD0081E268DFF008F9E7A /* SSIToolBar.h */,
-				132CD0091E268DFF008F9E7A /* SSIToolBar.m */,
-				132CD00B1E26B5C1008F9E7A /* SSIToolBar+SSI.h */,
-				132CD00C1E26B5C1008F9E7A /* SSIToolBar+SSI.m */,
-			);
-			path = SSIToolBar;
-			sourceTree = "<group>";
-		};
 		1337C6591E2D14F700B6FF03 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				1325C3931E2D203500B35C07 /* SSILaunchViewController.h */,
-				1325C3941E2D203500B35C07 /* SSILaunchViewController.m */,
+				1325C3F81E2EF4CB00B35C07 /* Controllers */,
 				1325C3911E2D1F4600B35C07 /* Launch.storyboard */,
-				1325C3961E2D270100B35C07 /* SSILaunchPageViewController.h */,
-				1325C3971E2D270100B35C07 /* SSILaunchPageViewController.m */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -246,6 +304,9 @@
 			isa = PBXGroup;
 			children = (
 				1337C6571E2D139100B6FF03 /* Dashboard.storyboard */,
+				1325C3ED1E2ED5BB00B35C07 /* Animations */,
+				1325C3EC1E2ED59700B35C07 /* Controllers */,
+				1325C3F71E2EF3E000B35C07 /* Resources */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -335,11 +396,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				132CCFEE1E268D68008F9E7A /* LaunchScreen.storyboard in Resources */,
+				1325C3E71E2ED57C00B35C07 /* giftcard.qc in Resources */,
 				1325C3921E2D1F4600B35C07 /* Launch.storyboard in Resources */,
 				132CCFEB1E268D68008F9E7A /* Assets.xcassets in Resources */,
 				132CCFE91E268D68008F9E7A /* Main.storyboard in Resources */,
 				1337C6581E2D139100B6FF03 /* Dashboard.storyboard in Resources */,
-				1325C39B1E2D286900B35C07 /* Register.storyboard in Resources */,
+				1325C3FD1E2F982200B35C07 /* toolbar.qc in Resources */,
+				1325C3EA1E2ED57C00B35C07 /* share.qc in Resources */,
+				1325C3E91E2ED57C00B35C07 /* logo.qc in Resources */,
+				1325C3E81E2ED57C00B35C07 /* levelup.qc in Resources */,
+				1325C3EB1E2ED57C00B35C07 /* surveys.qc in Resources */,
+				1325C3E61E2ED57C00B35C07 /* abilities.qc in Resources */,
+				1325C3DE1E2ED10700B35C07 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,25 +425,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1325C3A41E2D2C4F00B35C07 /* SSIRegisterPageContentViewController.m in Sources */,
+				1325C3D11E2ED0F400B35C07 /* SSIRegistrationSocialAnimation.m in Sources */,
 				1325C3A71E2E5C0C00B35C07 /* UIColor+SSI.m in Sources */,
+				1325C3D01E2ED0F400B35C07 /* SSIRegistrationLevelUpAnimation.m in Sources */,
 				132CCFE61E268D68008F9E7A /* ViewController.m in Sources */,
-				1325C3981E2D270100B35C07 /* SSILaunchPageViewController.m in Sources */,
-				132CD00D1E26B5C1008F9E7A /* SSIToolBar+SSI.m in Sources */,
+				1325C3F51E2EF3BB00B35C07 /* SSIToolBar.m in Sources */,
+				1325C3CF1E2ED0F400B35C07 /* SSIRegistrationGiftCardAnimation.m in Sources */,
+				1325C3DB1E2ED0FF00B35C07 /* SSIRegisterPageContentViewController.m in Sources */,
+				1325C3D31E2ED0F400B35C07 /* SSIRegistrationWelcomeAnimation.m in Sources */,
+				1325C3CE1E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.m in Sources */,
+				1325C3DC1E2ED0FF00B35C07 /* SSIRegisterPageViewController.m in Sources */,
+				1325C3DA1E2ED0FF00B35C07 /* SSIRegisterContainerViewController.m in Sources */,
 				132CCFE31E268D68008F9E7A /* AppDelegate.m in Sources */,
-				1325C3B81E2EC4DF00B35C07 /* SSIRegistrationLevelUpAnimation.m in Sources */,
+				1325C3F01E2ED5EB00B35C07 /* SSIDashboardViewController.m in Sources */,
 				132CD0061E268DCC008F9E7A /* QCMethod.m in Sources */,
-				132CD00A1E268DFF008F9E7A /* SSIToolBar.m in Sources */,
-				1325C3BB1E2EC67600B35C07 /* SSIRegistrationGiftCardAnimation.m in Sources */,
-				1325C39E1E2D28DA00B35C07 /* SSIRegisterContainerViewController.m in Sources */,
-				1325C3951E2D203500B35C07 /* SSILaunchViewController.m in Sources */,
-				1325C3A11E2D28FE00B35C07 /* SSIRegisterPageViewController.m in Sources */,
-				1325C3AF1E2E853800B35C07 /* SSIRegistrationWelcomeAnimation.m in Sources */,
+				1325C3F61E2EF3BB00B35C07 /* SSIToolBar+SSI.m in Sources */,
 				132CCFE01E268D68008F9E7A /* main.m in Sources */,
 				132CD0101E26E54C008F9E7A /* UIImage+SSIImage.m in Sources */,
-				1325C3B51E2EC2CA00B35C07 /* SSIRegistrationAbilitiesAnimation.m in Sources */,
-				1325C3B21E2E998E00B35C07 /* SSIRegistrationSurveysAnimation.m in Sources */,
-				1325C3BE1E2ECB6400B35C07 /* SSIRegistrationSocialAnimation.m in Sources */,
+				1325C3D21E2ED0F400B35C07 /* SSIRegistrationSurveysAnimation.m in Sources */,
+				1325C3FB1E2EF55700B35C07 /* SSILaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
