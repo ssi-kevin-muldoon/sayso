@@ -30,6 +30,7 @@
 		1325C3F61E2EF3BB00B35C07 /* SSIToolBar+SSI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3F41E2EF3BB00B35C07 /* SSIToolBar+SSI.m */; };
 		1325C3FB1E2EF55700B35C07 /* SSILaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3FA1E2EF55700B35C07 /* SSILaunchViewController.m */; };
 		1325C3FD1E2F982200B35C07 /* toolbar.qc in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3FC1E2F982200B35C07 /* toolbar.qc */; };
+		1325C4011E2FBE9500B35C07 /* SSILaunchScreenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C4001E2FBE9500B35C07 /* SSILaunchScreenAnimation.m */; };
 		132CCFE01E268D68008F9E7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFDF1E268D68008F9E7A /* main.m */; };
 		132CCFE31E268D68008F9E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFE21E268D68008F9E7A /* AppDelegate.m */; };
 		132CCFE61E268D68008F9E7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFE51E268D68008F9E7A /* ViewController.m */; };
@@ -91,6 +92,8 @@
 		1325C3F91E2EF55700B35C07 /* SSILaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSILaunchViewController.h; sourceTree = "<group>"; };
 		1325C3FA1E2EF55700B35C07 /* SSILaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSILaunchViewController.m; sourceTree = "<group>"; };
 		1325C3FC1E2F982200B35C07 /* toolbar.qc */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = toolbar.qc; sourceTree = "<group>"; };
+		1325C3FF1E2FBE9500B35C07 /* SSILaunchScreenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSILaunchScreenAnimation.h; sourceTree = "<group>"; };
+		1325C4001E2FBE9500B35C07 /* SSILaunchScreenAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSILaunchScreenAnimation.m; sourceTree = "<group>"; };
 		132CCFDB1E268D68008F9E7A /* sayso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sayso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		132CCFDF1E268D68008F9E7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		132CCFE11E268D68008F9E7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -222,6 +225,22 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		1325C3FE1E2FBE7D00B35C07 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1325C3FF1E2FBE9500B35C07 /* SSILaunchScreenAnimation.h */,
+				1325C4001E2FBE9500B35C07 /* SSILaunchScreenAnimation.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		1325C4021E2FE04100B35C07 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Alert;
+			sourceTree = "<group>";
+		};
 		132CCFD21E268D68008F9E7A = {
 			isa = PBXGroup;
 			children = (
@@ -243,8 +262,8 @@
 		132CCFDD1E268D68008F9E7A /* sayso */ = {
 			isa = PBXGroup;
 			children = (
-				1325C3BF1E2ED08F00B35C07 /* Register */,
 				1337C6591E2D14F700B6FF03 /* Launch */,
+				1325C3BF1E2ED08F00B35C07 /* Register */,
 				1350A2CB1E2D131200E7444F /* Dashboard */,
 				132CCFE11E268D68008F9E7A /* AppDelegate.h */,
 				132CCFE21E268D68008F9E7A /* AppDelegate.m */,
@@ -260,6 +279,8 @@
 		132CCFDE1E268D68008F9E7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1336D49C1E2FE194008AB597 /* Transitioning */,
+				1325C4021E2FE04100B35C07 /* Alert */,
 				132CCFEF1E268D68008F9E7A /* Info.plist */,
 				132CD00E1E26E54C008F9E7A /* UIImage+SSIImage.h */,
 				132CD00F1E26E54C008F9E7A /* UIImage+SSIImage.m */,
@@ -291,9 +312,49 @@
 			path = QuartzCode;
 			sourceTree = "<group>";
 		};
+		1336D49C1E2FE194008AB597 /* Transitioning */ = {
+			isa = PBXGroup;
+			children = (
+				1336D4A01E2FE1F9008AB597 /* Proxies */,
+				1336D49F1E2FE1D3008AB597 /* Presenting */,
+				1336D49E1E2FE1C4008AB597 /* Dismissing */,
+				1336D49D1E2FE1AD008AB597 /* Controllers */,
+			);
+			path = Transitioning;
+			sourceTree = "<group>";
+		};
+		1336D49D1E2FE1AD008AB597 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1336D49E1E2FE1C4008AB597 /* Dismissing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dismissing;
+			sourceTree = "<group>";
+		};
+		1336D49F1E2FE1D3008AB597 /* Presenting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenting;
+			sourceTree = "<group>";
+		};
+		1336D4A01E2FE1F9008AB597 /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Proxies;
+			sourceTree = "<group>";
+		};
 		1337C6591E2D14F700B6FF03 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				1325C3FE1E2FBE7D00B35C07 /* Animations */,
 				1325C3F81E2EF4CB00B35C07 /* Controllers */,
 				1325C3911E2D1F4600B35C07 /* Launch.storyboard */,
 			);
@@ -436,6 +497,7 @@
 				1325C3CE1E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.m in Sources */,
 				1325C3DC1E2ED0FF00B35C07 /* SSIRegisterPageViewController.m in Sources */,
 				1325C3DA1E2ED0FF00B35C07 /* SSIRegisterContainerViewController.m in Sources */,
+				1325C4011E2FBE9500B35C07 /* SSILaunchScreenAnimation.m in Sources */,
 				132CCFE31E268D68008F9E7A /* AppDelegate.m in Sources */,
 				1325C3F01E2ED5EB00B35C07 /* SSIDashboardViewController.m in Sources */,
 				132CD0061E268DCC008F9E7A /* QCMethod.m in Sources */,

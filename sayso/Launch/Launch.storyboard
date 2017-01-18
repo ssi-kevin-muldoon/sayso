@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,28 +21,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saysoHeroLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jCU-Cy-uga">
-                                <rect key="frame" x="96" y="210" width="183" height="80"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an opinion?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BS-7R-ylI">
-                                <rect key="frame" x="16" y="298" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fcg-OE-7U6" customClass="SSILaunchScreenAnimation">
+                                <rect key="frame" x="27" y="173" width="320" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="cfS-qC-FRK"/>
+                                    <constraint firstAttribute="height" constant="320" id="idz-9J-0lb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.30980392156862746" green="0.76470588235294112" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="7BS-7R-ylI" firstAttribute="trailing" secondItem="bof-78-a2f" secondAttribute="trailingMargin" id="JCp-HS-49u"/>
-                            <constraint firstItem="7BS-7R-ylI" firstAttribute="top" secondItem="jCU-Cy-uga" secondAttribute="bottom" constant="8" id="PLY-qg-ilL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jCU-Cy-uga" secondAttribute="trailing" constant="80" id="XEd-ly-TV5"/>
-                            <constraint firstItem="7BS-7R-ylI" firstAttribute="leading" secondItem="bof-78-a2f" secondAttribute="leadingMargin" id="bRv-SI-hXX"/>
-                            <constraint firstItem="jCU-Cy-uga" firstAttribute="top" secondItem="3n7-Hf-gGA" secondAttribute="bottom" constant="190" id="hhv-fC-35a"/>
-                            <constraint firstItem="jCU-Cy-uga" firstAttribute="leading" secondItem="bof-78-a2f" secondAttribute="leadingMargin" constant="80" id="uth-Gf-fNR"/>
+                            <constraint firstItem="Fcg-OE-7U6" firstAttribute="centerY" secondItem="bof-78-a2f" secondAttribute="centerY" id="jFf-VW-7fr"/>
+                            <constraint firstItem="Fcg-OE-7U6" firstAttribute="centerX" secondItem="bof-78-a2f" secondAttribute="centerX" id="uvN-Zs-OO1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qAF-kE-VI2"/>
                     <connections>
+                        <outlet property="animation" destination="Fcg-OE-7U6" id="p4j-Mx-mt6"/>
                         <segue destination="Jh4-XU-6tr" kind="show" identifier="DashboardStoryboardSegueIdentifier" id="CYe-WZ-Ayj"/>
                         <segue destination="IEo-K0-x8h" kind="show" identifier="RegisterStoryboardSegueIdentifier" id="Bpi-JN-rBZ"/>
                     </connections>
@@ -87,7 +82,4 @@
             <point key="canvasLocation" x="-26.399999999999999" y="116.49175412293854"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="saysoHeroLogo" width="244" height="80"/>
-    </resources>
 </document>

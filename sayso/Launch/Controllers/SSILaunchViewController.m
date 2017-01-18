@@ -7,11 +7,13 @@
 //
 
 #import "SSILaunchViewController.h"
+#import "SSILaunchScreenAnimation.h"
 
 static NSString *SSIDashboardStoryboardSegueIdentifier = @"DashboardStoryboardSegueIdentifier";
 static NSString *SSIRegisterStoryboardSegueIdentifier = @"RegisterStoryboardSegueIdentifier";
 
 @interface SSILaunchViewController ()
+@property (weak, nonatomic) IBOutlet SSILaunchScreenAnimation *animation;
 
 @end
 
@@ -21,8 +23,15 @@ static NSString *SSIRegisterStoryboardSegueIdentifier = @"RegisterStoryboardSegu
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self performSelector:@selector(performSegue:) withObject:self afterDelay:1.6f];
     
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.animation addUntitled1AnimationCompletionBlock:^(BOOL finished) {
+        [self performSelector:@selector(performSegue:) withObject:self afterDelay:1.35f];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
