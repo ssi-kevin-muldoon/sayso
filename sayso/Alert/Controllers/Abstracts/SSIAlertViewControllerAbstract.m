@@ -20,14 +20,14 @@ static NSString *SSIAlertActionButtonStyleCancelImage = @"alertActionButtonStyle
 
 static CGFloat SSIAlertViewControllerContentViewWidth = 280.0f;
 
-static NSString *SSIAlertViewControllerTitleFont = @"HelveticaNeue-Bold";
-static CGFloat SSIAlertViewControllerTitleFontSize = 20.0f;
+static NSString *SSIAlertViewControllerTitleFont = @"HelveticaNeue-Medium";
+static CGFloat SSIAlertViewControllerTitleFontSize = 18.0f;
 
 static NSString *SSIAlertViewControllerMessageFont = @"HelveticaNeue-Light";
 static CGFloat SSIAlertViewControllerMessageFontSize = 14.0f;
 
 static NSString *SSIAlertActionButtonTitleLabelFont = @"HelveticaNeue";
-static CGFloat SSIAlertActionButtonTitleLabelFontSize = 17.0f;
+static CGFloat SSIAlertActionButtonTitleLabelFontSize = 16.0f;
 
 static CGFloat SSIAlertActionButtonHeight = 44.0f;
 static CGFloat SSIAlertActionButtonInset = 0.0f;

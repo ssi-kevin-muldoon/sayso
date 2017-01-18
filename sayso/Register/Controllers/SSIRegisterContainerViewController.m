@@ -9,6 +9,7 @@
 #import "SSIRegisterContainerViewController.h"
 #import "SSIRegisterPageViewController.h"
 #import "SSIAlertController.h"
+#import "SSITigerTransitioningProxy.h"
 
 static NSString *SSIDashboardStoryboardSegueIdentifier = @"SSIDashboardStoryboardSegueIdentifier";
 
@@ -59,19 +60,49 @@ static NSString *SSIDashboardStoryboardSegueIdentifier = @"SSIDashboardStoryboar
 }
 
 - (IBAction)maybeLaterButtonAction:(id)sender {
-//    [self performSegueWithIdentifier:SSIDashboardStoryboardSegueIdentifier sender:self];
     
-    SSIAlertController *alert = [SSIAlertController alertWithTitle:@"Title" message:@"Message..." style:SSIAlertViewControllerStyleDefault];
-    [alert addAction:[SSIAlertAction title:@"Cool" style:SSIAlertActionButtonStyleCancel handler:^{ [self dismissViewControllerAnimated:YES completion:nil]; }]];
-    [alert addAction:[SSIAlertAction title:@"OK" style:SSIAlertActionButtonStyleDefault handler:^{
-        [self dismissViewControllerAnimated:NO completion:^{
-            [self performSegueWithIdentifier:SSIDashboardStoryboardSegueIdentifier sender:self];
-        }];
+    NSString *title = @"Are you sure?";
+    NSString *message = @"You won't be able to earn points unless you're a member.";
+    NSString *cancelButtonTitle = @"Cancel";
+    NSString *okButtonTitle = @"Maybe later";
+
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    
+    [alert addAction:[SSIAlertAction title:cancelButtonTitle
+                                     style:SSIAlertActionButtonStyleCancel
+                                   handler:^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }]];
+    
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+        
+        [alert presentViewController:[self laterAlert] animated:YES completion:nil];
+        
     }]];
     [self presentViewController:alert animated:YES completion:nil];
     
 }
 
+- (SSIAlertController *)laterAlert {
+    
+    NSString *title = @"No problem!";
+    NSString *message = @"Non-members can participate in quizzes. To access high-value surveys, you can become a member at any time.";
+    NSString *okButtonTitle = @"OK";
+
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+   
+    [alert setTransitioningProxy:[SSITigerTransitioningProxy new]];
+
+    [alert addAction:[SSIAlertAction title:okButtonTitle style:SSIAlertActionButtonStyleDefault handler:^{
+        [self dismissViewControllerAnimated:NO completion:^{
+            [self performSegueWithIdentifier:SSIDashboardStoryboardSegueIdentifier sender:self];
+        }];
+    }]];
+    
+    return alert;
+}
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
