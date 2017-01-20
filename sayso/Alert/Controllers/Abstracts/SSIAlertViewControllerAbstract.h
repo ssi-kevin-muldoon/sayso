@@ -6,7 +6,7 @@
 //  Copyright © 2015 Survey Sampling International, LLC. All rights reserved.
 //
 
-#import "SSIViewControllerAbstract.h"
+#import <UIKit/UIKit.h>
 
 typedef void(^SSIAlertActionHandler)(void);
 
@@ -33,7 +33,7 @@ typedef NS_ENUM(NSInteger, SSIAlertActionButtonStyle) {
 
 @end
 
-@interface SSIAlertViewControllerAbstract : SSIViewControllerAbstract
+@interface SSIAlertViewControllerAbstract : UIViewController
 
 @property (strong, nonatomic) id<UIViewControllerTransitioningDelegate> transitioningProxy;
 

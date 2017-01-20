@@ -144,7 +144,7 @@ static CGFloat SSIAlertActionButtonInset = 0.0f;
         [_titleLabel setNumberOfLines:0];
         [_titleLabel setLineBreakMode:NSLineBreakByWordWrapping];
         [_titleLabel setText:self.title];
-        [_titleLabel setTextColor:[UIColor colorWithRed:51.0f/255.0f green:51.0f/255.0f blue:51.0f/255.0f alpha:1.0f]];
+        [_titleLabel setTextColor:[UIColor colorWithRed:76.0f/255.0f green:76.0f/255.0f blue:76.0f/255.0f alpha:1.0f]];
         if (self.message) {
             [_titleLabel setFont:[UIFont fontWithName:SSIAlertViewControllerTitleFont size:SSIAlertViewControllerTitleFontSize]];
         } else {

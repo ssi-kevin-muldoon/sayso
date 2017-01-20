@@ -6,10 +6,10 @@
 //  Copyright © 2017 Survey Sampling International, LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SSIViewControllerAbstract.h"
 #import "SSIQuartzCodeAnimationProtocol.h"
 
-@interface SSIRegisterPageContentViewController : UIViewController
+@interface SSIRegisterPageContentViewController : SSIViewControllerAbstract
 
 @property (assign, nonatomic) NSUInteger pageIndex;
 @property (strong, nonatomic) NSString *imageName;

@@ -8,10 +8,10 @@
 
 #import "SSIRegisterContainerViewController.h"
 #import "SSIRegisterPageViewController.h"
-#import "SSIAlertController.h"
 #import "SSITigerTransitioningProxy.h"
 
 static NSString *SSIDashboardStoryboardSegueIdentifier = @"SSIDashboardStoryboardSegueIdentifier";
+static NSString *SSIRegisterPageViewControllerIdentifier = @"SSIRegisterPageViewController";
 
 @interface SSIRegisterContainerViewController ()
 @property (strong, nonatomic) SSIRegisterPageViewController *pageViewController;
@@ -26,7 +26,7 @@ static NSString *SSIDashboardStoryboardSegueIdentifier = @"SSIDashboardStoryboar
     // Do any additional setup after loading the view.
     
     // Create page view controller
-    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SSIRegisterPageViewController"];
+    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:SSIRegisterPageViewControllerIdentifier];
     [self.pageViewController setPageControl:self.pageControl];
     [self.pageViewController setLearnMoreLabel:self.learnMoreLabel];
     
@@ -62,9 +62,9 @@ static NSString *SSIDashboardStoryboardSegueIdentifier = @"SSIDashboardStoryboar
 - (IBAction)maybeLaterButtonAction:(id)sender {
     
     NSString *title = @"Are you sure?";
-    NSString *message = @"You won't be able to earn points unless you're a member.";
+    NSString *message = @"Only members can earn points, collect badges and win prizes.";
     NSString *cancelButtonTitle = @"Cancel";
-    NSString *okButtonTitle = @"Maybe later";
+    NSString *okButtonTitle = @"I'm sure";
 
     SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
     
@@ -88,7 +88,7 @@ static NSString *SSIDashboardStoryboardSegueIdentifier = @"SSIDashboardStoryboar
 - (SSIAlertController *)laterAlert {
     
     NSString *title = @"No problem!";
-    NSString *message = @"Non-members can participate in quizzes. To access high-value surveys, you can become a member at any time.";
+    NSString *message = @"You can participate right now. Become a member at any time from the account menu.";
     NSString *okButtonTitle = @"OK";
 
     SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
@@ -102,6 +102,10 @@ static NSString *SSIDashboardStoryboardSegueIdentifier = @"SSIDashboardStoryboar
     }]];
     
     return alert;
+}
+
+- (void)performSegueToDashboard {
+    [self performSegueWithIdentifier:SSIDashboardStoryboardSegueIdentifier sender:self];
 }
 
 - (BOOL)prefersStatusBarHidden {

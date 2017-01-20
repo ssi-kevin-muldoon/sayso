@@ -60,6 +60,9 @@
 		13DE61EC1E2FE96F0012C912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DE61EB1E2FE96F0012C912 /* Assets.xcassets */; };
 		13DE61F11E2FF79C0012C912 /* Playground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DE61F01E2FF79C0012C912 /* Playground.storyboard */; };
 		13DE61F51E2FF7D10012C912 /* SSIPlaygroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61F41E2FF7D10012C912 /* SSIPlaygroundViewController.m */; };
+		13DE61F81E3011AC0012C912 /* SSILogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61F71E3011AC0012C912 /* SSILogInViewController.m */; };
+		13DE61FB1E301DF10012C912 /* SSISignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61FA1E301DF10012C912 /* SSISignUpViewController.m */; };
+		13DE61FF1E3021640012C912 /* SSIAlertControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61FE1E3021640012C912 /* SSIAlertControllerFactory.m */; };
 		ACA2846742F6271A6AEBE94C /* libPods-saysoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E8DE314572FD28A3F03809 /* libPods-saysoTests.a */; };
 		F2347B5C09A6ECF935579502 /* libPods-sayso.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185D82CE2908FE261334830A /* libPods-sayso.a */; };
 /* End PBXBuildFile section */
@@ -170,6 +173,12 @@
 		13DE61F01E2FF79C0012C912 /* Playground.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Playground.storyboard; sourceTree = "<group>"; };
 		13DE61F31E2FF7D10012C912 /* SSIPlaygroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIPlaygroundViewController.h; sourceTree = "<group>"; };
 		13DE61F41E2FF7D10012C912 /* SSIPlaygroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIPlaygroundViewController.m; sourceTree = "<group>"; };
+		13DE61F61E3011AC0012C912 /* SSILogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSILogInViewController.h; sourceTree = "<group>"; };
+		13DE61F71E3011AC0012C912 /* SSILogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSILogInViewController.m; sourceTree = "<group>"; };
+		13DE61F91E301DF10012C912 /* SSISignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSISignUpViewController.h; sourceTree = "<group>"; };
+		13DE61FA1E301DF10012C912 /* SSISignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSISignUpViewController.m; sourceTree = "<group>"; };
+		13DE61FD1E3021640012C912 /* SSIAlertControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIAlertControllerFactory.h; sourceTree = "<group>"; };
+		13DE61FE1E3021640012C912 /* SSIAlertControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIAlertControllerFactory.m; sourceTree = "<group>"; };
 		185D82CE2908FE261334830A /* libPods-sayso.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sayso.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E8DE314572FD28A3F03809 /* libPods-saysoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-saysoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6EF3FB809514756C05D9E5 /* Pods-saysoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saysoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-saysoTests/Pods-saysoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -237,6 +246,10 @@
 				1325C3D71E2ED0FF00B35C07 /* SSIRegisterPageContentViewController.m */,
 				1325C3D81E2ED0FF00B35C07 /* SSIRegisterPageViewController.h */,
 				1325C3D91E2ED0FF00B35C07 /* SSIRegisterPageViewController.m */,
+				13DE61F61E3011AC0012C912 /* SSILogInViewController.h */,
+				13DE61F71E3011AC0012C912 /* SSILogInViewController.m */,
+				13DE61F91E301DF10012C912 /* SSISignUpViewController.h */,
+				13DE61FA1E301DF10012C912 /* SSISignUpViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,6 +318,7 @@
 			children = (
 				13DE61EB1E2FE96F0012C912 /* Assets.xcassets */,
 				13DE61E01E2FE6A50012C912 /* Controllers */,
+				13DE61FC1E3020F70012C912 /* Factories */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -507,6 +521,15 @@
 				13DE61F41E2FF7D10012C912 /* SSIPlaygroundViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		13DE61FC1E3020F70012C912 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				13DE61FD1E3021640012C912 /* SSIAlertControllerFactory.h */,
+				13DE61FE1E3021640012C912 /* SSIAlertControllerFactory.m */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		712BD79787CBA7AF295B72E1 /* Pods */ = {
@@ -752,6 +775,7 @@
 				13DE61CA1E2FE5E30012C912 /* SSIVerticalCarouselSpringyPresentAnimatedTransitioning.m in Sources */,
 				132CCFE61E268D68008F9E7A /* ViewController.m in Sources */,
 				13DE61E41E2FE6D80012C912 /* SSIAlertViewControllerAbstract.m in Sources */,
+				13DE61FB1E301DF10012C912 /* SSISignUpViewController.m in Sources */,
 				1325C3F51E2EF3BB00B35C07 /* SSIToolBar.m in Sources */,
 				13DE61BC1E2FE5D70012C912 /* SSIDropDownDismissAnimatedTransitioning.m in Sources */,
 				1325C3CF1E2ED0F400B35C07 /* SSIRegistrationGiftCardAnimation.m in Sources */,
@@ -760,6 +784,7 @@
 				13DE61B41E2FE5CD0012C912 /* SSIChromePresentationController.m in Sources */,
 				1325C3D31E2ED0F400B35C07 /* SSIRegistrationWelcomeAnimation.m in Sources */,
 				13DE61D51E2FE5EC0012C912 /* SSITigerTransitioningProxy.m in Sources */,
+				13DE61FF1E3021640012C912 /* SSIAlertControllerFactory.m in Sources */,
 				13DE61B51E2FE5CD0012C912 /* SSIVanillaPresentationController.m in Sources */,
 				1325C3CE1E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.m in Sources */,
 				1325C3DC1E2ED0FF00B35C07 /* SSIRegisterPageViewController.m in Sources */,
@@ -780,6 +805,7 @@
 				132CD0101E26E54C008F9E7A /* UIImage+SSIImage.m in Sources */,
 				13DE61D41E2FE5EC0012C912 /* SSILionTransitioningProxy.m in Sources */,
 				1325C3D21E2ED0F400B35C07 /* SSIRegistrationSurveysAnimation.m in Sources */,
+				13DE61F81E3011AC0012C912 /* SSILogInViewController.m in Sources */,
 				1325C3FB1E2EF55700B35C07 /* SSILaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

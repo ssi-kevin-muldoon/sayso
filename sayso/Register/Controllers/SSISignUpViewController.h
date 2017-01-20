@@ -1,14 +1,13 @@
 //
-//  SSIViewControllerAbstract.h
+//  SSISignUpViewController.h
 //  sayso
 //
 //  Created by Kevin Muldoon on 1/18/17.
 //  Copyright © 2017 Survey Sampling International, LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "SSIAlertController.h"
+#import "SSIViewControllerAbstract.h"
 
-@interface SSIViewControllerAbstract : UIViewController
+@interface SSISignUpViewController : SSIViewControllerAbstract
 
 @end

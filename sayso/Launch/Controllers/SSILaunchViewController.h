@@ -6,8 +6,8 @@
 //  Copyright © 2017 Survey Sampling International, LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SSIViewControllerAbstract.h"
 
-@interface SSILaunchViewController : UIViewController
+@interface SSILaunchViewController : SSIViewControllerAbstract
 
 @end
