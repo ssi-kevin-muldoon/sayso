@@ -33,8 +33,6 @@
 		1325C4011E2FBE9500B35C07 /* SSILaunchScreenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C4001E2FBE9500B35C07 /* SSILaunchScreenAnimation.m */; };
 		132CCFE01E268D68008F9E7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFDF1E268D68008F9E7A /* main.m */; };
 		132CCFE31E268D68008F9E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFE21E268D68008F9E7A /* AppDelegate.m */; };
-		132CCFE61E268D68008F9E7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFE51E268D68008F9E7A /* ViewController.m */; };
-		132CCFE91E268D68008F9E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132CCFE71E268D68008F9E7A /* Main.storyboard */; };
 		132CCFEB1E268D68008F9E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132CCFEA1E268D68008F9E7A /* Assets.xcassets */; };
 		132CCFEE1E268D68008F9E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132CCFEC1E268D68008F9E7A /* LaunchScreen.storyboard */; };
 		132CCFF91E268D68008F9E7A /* saysoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CCFF81E268D68008F9E7A /* saysoTests.m */; };
@@ -122,9 +120,6 @@
 		132CCFDF1E268D68008F9E7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		132CCFE11E268D68008F9E7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		132CCFE21E268D68008F9E7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		132CCFE41E268D68008F9E7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		132CCFE51E268D68008F9E7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		132CCFE81E268D68008F9E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		132CCFEA1E268D68008F9E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		132CCFED1E268D68008F9E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		132CCFEF1E268D68008F9E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -346,16 +341,12 @@
 		132CCFDD1E268D68008F9E7A /* sayso */ = {
 			isa = PBXGroup;
 			children = (
+				132CCFE11E268D68008F9E7A /* AppDelegate.h */,
+				132CCFE21E268D68008F9E7A /* AppDelegate.m */,
 				13DE61ED1E2FF6DF0012C912 /* Playground */,
 				1337C6591E2D14F700B6FF03 /* Launch */,
 				1325C3BF1E2ED08F00B35C07 /* Register */,
 				1350A2CB1E2D131200E7444F /* Dashboard */,
-				132CCFE11E268D68008F9E7A /* AppDelegate.h */,
-				132CCFE21E268D68008F9E7A /* AppDelegate.m */,
-				132CCFE41E268D68008F9E7A /* ViewController.h */,
-				132CCFE51E268D68008F9E7A /* ViewController.m */,
-				132CCFE71E268D68008F9E7A /* Main.storyboard */,
-				132CCFEC1E268D68008F9E7A /* LaunchScreen.storyboard */,
 				132CCFDE1E268D68008F9E7A /* Supporting Files */,
 			);
 			path = sayso;
@@ -471,6 +462,7 @@
 				1325C3FE1E2FBE7D00B35C07 /* Animations */,
 				1325C3F81E2EF4CB00B35C07 /* Controllers */,
 				1325C3911E2D1F4600B35C07 /* Launch.storyboard */,
+				132CCFEC1E268D68008F9E7A /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -648,7 +640,6 @@
 				1325C3921E2D1F4600B35C07 /* Launch.storyboard in Resources */,
 				132CCFEB1E268D68008F9E7A /* Assets.xcassets in Resources */,
 				13DE61EC1E2FE96F0012C912 /* Assets.xcassets in Resources */,
-				132CCFE91E268D68008F9E7A /* Main.storyboard in Resources */,
 				1337C6581E2D139100B6FF03 /* Dashboard.storyboard in Resources */,
 				1325C3FD1E2F982200B35C07 /* toolbar.qc in Resources */,
 				1325C3EA1E2ED57C00B35C07 /* share.qc in Resources */,
@@ -773,7 +764,6 @@
 				1325C3D01E2ED0F400B35C07 /* SSIRegistrationLevelUpAnimation.m in Sources */,
 				13DE61E71E2FE6E20012C912 /* SSIAlertController.m in Sources */,
 				13DE61CA1E2FE5E30012C912 /* SSIVerticalCarouselSpringyPresentAnimatedTransitioning.m in Sources */,
-				132CCFE61E268D68008F9E7A /* ViewController.m in Sources */,
 				13DE61E41E2FE6D80012C912 /* SSIAlertViewControllerAbstract.m in Sources */,
 				13DE61FB1E301DF10012C912 /* SSISignUpViewController.m in Sources */,
 				1325C3F51E2EF3BB00B35C07 /* SSIToolBar.m in Sources */,
@@ -829,20 +819,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		132CCFE71E268D68008F9E7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				132CCFE81E268D68008F9E7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		132CCFEC1E268D68008F9E7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				132CCFED1E268D68008F9E7A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
