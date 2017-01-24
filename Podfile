@@ -6,8 +6,8 @@ target 'sayso' do
   # use_frameworks!
 
   # Pods for sayso
-pod 'PureLayout', '~> 3.0'
-pod 'MagicalRecord', '~> 2.3'
+  pod 'PureLayout', '~> 3.0'
+  pod 'MagicalRecord', '~> 2.3'
 
 target 'saysoTests' do
     inherit! :search_paths

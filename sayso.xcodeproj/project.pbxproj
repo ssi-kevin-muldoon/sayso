@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1316B6A41E36D18D00390A4C /* sayso.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1316B6A21E36D18D00390A4C /* sayso.xcdatamodeld */; };
+		1316B6B91E36D88B00390A4C /* SSIActivityFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1316B6B81E36D88B00390A4C /* SSIActivityFactory.m */; };
 		1325C3921E2D1F4600B35C07 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1325C3911E2D1F4600B35C07 /* Launch.storyboard */; };
 		1325C3A71E2E5C0C00B35C07 /* UIColor+SSI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3A61E2E5C0C00B35C07 /* UIColor+SSI.m */; };
 		1325C3CE1E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325C3C31E2ED0F400B35C07 /* SSIRegistrationAbilitiesAnimation.m */; };
@@ -76,6 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1316B6A31E36D18D00390A4C /* sayso.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sayso.xcdatamodel; sourceTree = "<group>"; };
+		1316B6B71E36D88B00390A4C /* SSIActivityFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIActivityFactory.h; sourceTree = "<group>"; };
+		1316B6B81E36D88B00390A4C /* SSIActivityFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIActivityFactory.m; sourceTree = "<group>"; };
 		1325C3911E2D1F4600B35C07 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		1325C3A51E2E5C0C00B35C07 /* UIColor+SSI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SSI.h"; sourceTree = "<group>"; };
 		1325C3A61E2E5C0C00B35C07 /* UIColor+SSI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SSI.m"; sourceTree = "<group>"; };
@@ -202,6 +207,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1316B6A11E36D11000390A4C /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				1316B6A21E36D18D00390A4C /* sayso.xcdatamodeld */,
+				1316B6B71E36D88B00390A4C /* SSIActivityFactory.h */,
+				1316B6B81E36D88B00390A4C /* SSIActivityFactory.m */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
 		1325C3BF1E2ED08F00B35C07 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +358,7 @@
 			children = (
 				132CCFE11E268D68008F9E7A /* AppDelegate.h */,
 				132CCFE21E268D68008F9E7A /* AppDelegate.m */,
+				1316B6A11E36D11000390A4C /* Persistance */,
 				13DE61ED1E2FF6DF0012C912 /* Playground */,
 				1337C6591E2D14F700B6FF03 /* Launch */,
 				1325C3BF1E2ED08F00B35C07 /* Register */,
@@ -791,9 +807,11 @@
 				13DE61D31E2FE5EC0012C912 /* SSIGiraffeTransitioningProxy.m in Sources */,
 				1325C3F61E2EF3BB00B35C07 /* SSIToolBar+SSI.m in Sources */,
 				13DE61C81E2FE5E30012C912 /* SSIFadePresentAnimatedTransitioning.m in Sources */,
+				1316B6A41E36D18D00390A4C /* sayso.xcdatamodeld in Sources */,
 				132CCFE01E268D68008F9E7A /* main.m in Sources */,
 				132CD0101E26E54C008F9E7A /* UIImage+SSIImage.m in Sources */,
 				13DE61D41E2FE5EC0012C912 /* SSILionTransitioningProxy.m in Sources */,
+				1316B6B91E36D88B00390A4C /* SSIActivityFactory.m in Sources */,
 				1325C3D21E2ED0F400B35C07 /* SSIRegistrationSurveysAnimation.m in Sources */,
 				13DE61F81E3011AC0012C912 /* SSILogInViewController.m in Sources */,
 				1325C3FB1E2EF55700B35C07 /* SSILaunchViewController.m in Sources */,
@@ -1008,6 +1026,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1316B6A21E36D18D00390A4C /* sayso.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1316B6A31E36D18D00390A4C /* sayso.xcdatamodel */,
+			);
+			currentVersion = 1316B6A31E36D18D00390A4C /* sayso.xcdatamodel */;
+			path = sayso.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 132CCFD31E268D68008F9E7A /* Project object */;
 }

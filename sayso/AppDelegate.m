@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "UIImage+SSIImage.h"
 #import "UIColor+SSI.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import "SSIActivityFactory.h"
 
 @interface AppDelegate ()
 
@@ -29,6 +31,8 @@
         
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
         
+        NSLog(@"%@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory  inDomains:NSUserDomainMask] lastObject]);
+
 
     }
     return self;
@@ -39,6 +43,14 @@
     // Override point for customization after application launch.
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
     [application setStatusBarHidden:YES];
+    
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"sayso"];
+    
+    [SSIActivityFactory new];
+    
+
+    
+    
     return YES;
 }
 
@@ -46,6 +58,9 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
+    [MagicalRecord cleanUp];
+
 }
 
 

@@ -158,7 +158,7 @@ static NSString *SSIRegisterPageContentViewControllerIdentifier = @"SSIRegisterP
                         @"Take surveys",
                         @"Level up!",
                         @"Fabulous prizes!",
-                        @"Spread the word!"
+                        @"Sharing is caring!"
                         ];
     }
     return _pageTitles;
