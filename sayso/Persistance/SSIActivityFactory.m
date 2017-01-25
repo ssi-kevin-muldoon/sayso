@@ -56,7 +56,7 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyDetailKey:@"Don't get is scrambled",
                SSIActivityPropertyValueCompleteKey:@1,
                SSIActivityPropertyTypeKey:@0,
-               SSIActivityPropertyURLKey:@"www.google.com",
+               SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/ahmedaliakbar/how-trash-are-your-egg-opinions?utm_term=.ynYolJ9by#.ktBLEn6zb",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
                },
@@ -65,7 +65,7 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyDetailKey:@"Do you really seek world domination?",
                SSIActivityPropertyValueCompleteKey:@1,
                SSIActivityPropertyTypeKey:@0,
-               SSIActivityPropertyURLKey:@"www.google.com",
+               SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/hattiesoykan/what-kind-of-villain-are-you?utm_term=.doGQP8LMw#.oc4dovpxm",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
                },
@@ -74,7 +74,7 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyDetailKey:@"Let’s see if you’re a ‘die hard’ Bruce Willis fan.",
                SSIActivityPropertyValueCompleteKey:@1,
                SSIActivityPropertyTypeKey:@0,
-               SSIActivityPropertyURLKey:@"www.google.com",
+               SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/allsnrjs/how-many-bruce-willis-films-have-you-seen-zvgd?utm_term=.ux6ZENjOD#.mbdDLbqmW",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
                },
@@ -83,7 +83,7 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyDetailKey:@"Time to find out",
                SSIActivityPropertyValueCompleteKey:@1,
                SSIActivityPropertyTypeKey:@0,
-               SSIActivityPropertyURLKey:@"www.google.com",
+               SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/greygryffindor/which-skywalker-are-you-2qwq4?utm_term=.uir3K82Ly#.ttxvJRm5B",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
                },
@@ -92,7 +92,7 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyDetailKey:@"Hey now! You’re a rockstar!",
                SSIActivityPropertyValueCompleteKey:@1,
                SSIActivityPropertyTypeKey:@0,
-               SSIActivityPropertyURLKey:@"www.google.com",
+               SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/basicdisney/we-know-which-dreamworks-movie-you-are-based-on-yo-1ap2x?utm_term=.lfpNaJm4y#.aypOo7XKN",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
                },
@@ -101,7 +101,7 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyDetailKey:@"Passersby or passerbys?",
                SSIActivityPropertyValueCompleteKey:@1,
                SSIActivityPropertyTypeKey:@0,
-               SSIActivityPropertyURLKey:@"www.google.com",
+               SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/sarahaspler/do-you-know-the-plurals-for-these-random-words?utm_term=.cxdVxQp5W#.rmZ3OXj1n",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
                },
@@ -110,7 +110,7 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyDetailKey:@"Are you one with the force? Is the force with you? Let’s find out.",
                SSIActivityPropertyValueCompleteKey:@1,
                SSIActivityPropertyTypeKey:@0,
-               SSIActivityPropertyURLKey:@"www.google.com",
+               SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/perpetua/which-rogue-one-character-are-you?utm_term=.vrLLyOazx#.gh9dQVEkj",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
                },
@@ -119,7 +119,7 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyDetailKey:@"For real though.",
                SSIActivityPropertyValueCompleteKey:@1,
                SSIActivityPropertyTypeKey:@0,
-               SSIActivityPropertyURLKey:@"www.google.com",
+               SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/lorynbrantz/this-one-question-will-determine-if-youre-a-woman-or-not?utm_term=.ql929pjyd#.fgK2qaW83",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
                },
@@ -128,7 +128,7 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyDetailKey:@"Sorry for doing this..again.",
                SSIActivityPropertyValueCompleteKey:@1,
                SSIActivityPropertyTypeKey:@0,
-               SSIActivityPropertyURLKey:@"www.google.com",
+               SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/remeepatel/youre-only-allowed-one-puppies-or-pizza?utm_term=.ggAbK9GPD#.igAJd32yY",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
                },
@@ -137,7 +137,7 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyDetailKey:@"Are you a hops hipster or a real ale fan?",
                SSIActivityPropertyValueCompleteKey:@1,
                SSIActivityPropertyTypeKey:@0,
-               SSIActivityPropertyURLKey:@"www.google.com",
+               SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/ailbhemalone/quizup-in-a-brewery?utm_term=.ll4yapDZ5#.qoBOEBnAv",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
                }
