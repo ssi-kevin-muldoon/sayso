@@ -12,7 +12,14 @@
 #import <MagicalRecord/MagicalRecord.h>
 #import "SSIActivityTableViewCell.h"
 
-static NSString * const SSIActivityTableViewCellIdentifier = @"SSIActivityTableViewCellIdentifier";
+typedef enum {
+    SSIActivityTypeQuiz = 0,
+    SSIActivityTypeSurvey = 1,
+} SSIActivityType;
+
+static NSString * const SSITableViewCellQuizIdentifier = @"SSITableViewCellQuizIdentifier";
+static NSString * const SSITableViewCellSurveyIdentifier = @"SSITableViewCellSurveyIdentifier";
+static NSString * const SSINSFetchedResultsControllerCache = @"SSINSFetchedResultsControllerCache";
 
 @interface SSIDashboardViewController () <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 @property (weak, nonatomic) IBOutlet SSIToolBar *animatedToolBar;
@@ -29,6 +36,14 @@ static NSString * const SSIActivityTableViewCellIdentifier = @"SSIActivityTableV
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"saysoNavigationBarLogo"]];
     [self.navigationItem setHidesBackButton:YES];
     [self tableView];
+    
+    // Delete cache first, if a cache is used
+    [NSFetchedResultsController deleteCacheWithName:SSINSFetchedResultsControllerCache];
+    NSError *error;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        // Update to handle the error appropriately.
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+    }
 
 }
 
@@ -63,30 +78,32 @@ static NSString * const SSIActivityTableViewCellIdentifier = @"SSIActivityTableV
 }
 
 #pragma mark - UITableViewDataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.dataSource count];
-}
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return [self.dataSource count];
+//}
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    SSIActivityTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SSIActivityTableViewCellIdentifier forIndexPath:indexPath];
-    
-    Activity *activity = [self.dataSource objectAtIndex:indexPath.row];
-    
-    [cell.valueLabel setText: [NSString stringWithFormat:@"%i", [activity valueComplete]] ];
-    [cell.typeLabel setText:@"QUIZ"];
-    [cell.pointsLabel setText:@"POINTS"];
-    cell.titleLabel.text = [activity title];
-    cell.bodyLabel.text = [activity summery];
-
-    [cell setNeedsUpdateConstraints];
-    [cell updateConstraintsIfNeeded];
-    
-    return cell;
-}
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    SSIActivityTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SSIActivityTableViewCellIdentifier forIndexPath:indexPath];
+//    
+//    Activity *activity = [self.dataSource objectAtIndex:indexPath.row];
+//    
+//    [cell.valueLabel setText: [NSString stringWithFormat:@"%i", [activity valueComplete]] ];
+//    [cell.typeLabel setText:@"QUIZ"];
+//    [cell.pointsLabel setText:@"POINTS"];
+//    cell.titleLabel.text = [activity title];
+//    cell.bodyLabel.text = [activity summery];
+//
+//    [cell setNeedsUpdateConstraints];
+//    [cell updateConstraintsIfNeeded];
+//    
+//    return cell;
+//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"...");
+    Activity *activity = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    NSLog(@"...%@", activity);
+
 }
 
 
@@ -139,32 +156,56 @@ static NSString * const SSIActivityTableViewCellIdentifier = @"SSIActivityTableV
         return _fetchedResultsController;
     }
     
-    NSFetchRequest *fetchRequest = [Activity MR_requestAllSortedBy:@"xx" ascending:NO];
+    NSFetchRequest *fetchRequest = [Activity MR_requestAllSortedBy:@"type" ascending:NO];
     
     [fetchRequest setFetchLimit:100];         // Let's say limit fetch to 100
     [fetchRequest setFetchBatchSize:20];      // After 20 are faulted
-
     
-    NSFetchedResultsController *theFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[NSManagedObjectContext MR_defaultContext] sectionNameKeyPath:nil cacheName:@"PooCache"];
+    NSFetchedResultsController *theFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[NSManagedObjectContext MR_defaultContext] sectionNameKeyPath:nil cacheName:SSINSFetchedResultsControllerCache];
     
     self.fetchedResultsController = theFetchedResultsController;
     self.fetchedResultsController.delegate = self;
     return _fetchedResultsController;
-    
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [[_fetchedResultsController sections] count];
+}
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    id sectionInfo = [[_fetchedResultsController sections] objectAtIndex:section];
+    return [sectionInfo numberOfObjects];
+}
 
-
-//////////
-
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    return [[_fetchedResultsController sections] count];
-//}
-
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    id sectionInfo = [[_fetchedResultsController sections] objectAtIndex:section];
-//    return [sectionInfo numberOfObjects];
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    SSIActivityTableViewCell *cell;
+    Activity *activity = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    switch (activity.type) {
+        case SSIActivityTypeQuiz:
+            cell = [tableView dequeueReusableCellWithIdentifier:SSITableViewCellQuizIdentifier forIndexPath:indexPath];
+            break;
+            
+        case SSIActivityTypeSurvey:
+            cell = [tableView dequeueReusableCellWithIdentifier:SSITableViewCellSurveyIdentifier forIndexPath:indexPath];
+            
+        default:
+            break;
+    }
+    
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    NSString *formattedNumberString = [numberFormatter stringFromNumber:[NSNumber numberWithInt:[activity valueComplete]]];
+    
+    [cell.valueLabel setText: formattedNumberString];
+    [cell.titleLabel setText:[activity title]];
+    [cell.bodyLabel setText:[activity summery]];
+    
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
+    
+    return cell;
+}
 
 @end

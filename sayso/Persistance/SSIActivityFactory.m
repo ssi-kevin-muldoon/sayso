@@ -140,6 +140,15 @@ static NSString *SSIActivityPropertyValueQGIDKey = @"qgid";
                SSIActivityPropertyURLKey:@"https://www.buzzfeed.com/ailbhemalone/quizup-in-a-brewery?utm_term=.ll4yapDZ5#.qoBOEBnAv",
                SSIActivityPropertyValueConsolationKey:@1,
                SSIActivityPropertyValueQGIDKey:@"Foo"
+               },
+             @{SSIActivityPropertyTitleKey:@"Car shopping?",
+               SSIActivityPropertySummaryKey:@"We want to know how you’re deciding your next automobile purchase.",
+               SSIActivityPropertyDetailKey:@"We want to know how you’re deciding your next automobile purchase.",
+               SSIActivityPropertyValueCompleteKey:@5000,
+               SSIActivityPropertyTypeKey:@1,
+               SSIActivityPropertyURLKey:@"https://www.google.com/",
+               SSIActivityPropertyValueConsolationKey:@1,
+               SSIActivityPropertyValueQGIDKey:@"Foo"
                }
              ];
 }
