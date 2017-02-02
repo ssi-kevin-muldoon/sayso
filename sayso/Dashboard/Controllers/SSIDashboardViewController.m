@@ -14,6 +14,7 @@
 #import "SSIToolBar+SSI.h"
 #import "Account+CoreDataProperties.h"
 #import "Activity+CoreDataClass.h"
+#import "SSIAlertController.h"
 
 typedef enum {
     SSIActivityTypeQuiz = 0,
@@ -34,6 +35,7 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
 @end
 
 @implementation SSIDashboardViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -103,6 +105,93 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
 - (IBAction)buttonAction:(id)sender {
     
     [self toggleAction:sender];
+}
+- (IBAction)redeemButtonAction:(id)sender {
+    
+    NSString *title = @"Redeem";
+    NSString *message = @"This is where we'd present all the fabulous prizes. Educate user 'star coins' can be turned into gift cards.";
+    NSString *okButtonTitle = @"OK";
+
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+                                       
+                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                       
+                                   }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
+
+- (IBAction)levelButtonAction:(id)sender {
+    NSString *title = @"Redeem";
+    NSString *message = @"This is where we'd present all the fabulous prizes. Educate user 'star coins' can be turned into gift cards.";
+    NSString *okButtonTitle = @"OK";
+    
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+                                       
+                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                       
+                                   }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (IBAction)abilitiesButtonAction:(id)sender {
+    NSString *title = @"Levels";
+    NSString *message = @"Every 10,000 points earned, levels up and earns a star, redeemable for $10 gift card.";
+    NSString *okButtonTitle = @"OK";
+    
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+                                       
+                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                       
+                                   }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+
+- (IBAction)badgesButtonAction:(id)sender {
+    NSString *title = @"Badges";
+    NSString *message = @"Badges shown here, users win badges for 'First Complete', 'First Screen out', 'Shared a quiz'";
+    NSString *okButtonTitle = @"OK";
+    
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+                                       
+                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                       
+                                   }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (IBAction)pointsButtonAction:(id)sender {
+    NSString *title = @"Points";
+    NSString *message = @"Users points never decrement. A point earned is forever. Reinforce users growth story";
+    NSString *okButtonTitle = @"OK";
+    
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+                                       
+                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                       
+                                   }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)toggleAction:(id)sender {
@@ -270,5 +359,7 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
     }
     return _context;
 }
+
+
 
 @end

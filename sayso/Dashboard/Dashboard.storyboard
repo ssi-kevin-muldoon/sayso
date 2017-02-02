@@ -299,16 +299,26 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdF-8w-3sl">
+                                        <rect key="frame" x="-10" y="0.0" width="60" height="34"/>
+                                        <connections>
+                                            <action selector="redeemButtonAction:" destination="3tj-Mh-HhV" eventType="touchUpInside" id="T7t-YF-O61"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="wdF-8w-3sl" firstAttribute="top" secondItem="0up-Fl-d9s" secondAttribute="top" id="AHn-2M-udV"/>
                                     <constraint firstAttribute="trailing" secondItem="V0k-bI-ZCP" secondAttribute="trailing" constant="8" id="HcN-Yn-ccW"/>
                                     <constraint firstAttribute="trailing" secondItem="Elf-KQ-16Q" secondAttribute="trailing" id="KVc-yp-SoR"/>
                                     <constraint firstItem="Elf-KQ-16Q" firstAttribute="leading" secondItem="0up-Fl-d9s" secondAttribute="leading" id="Mbf-y1-Y0b"/>
                                     <constraint firstItem="V0k-bI-ZCP" firstAttribute="top" secondItem="0up-Fl-d9s" secondAttribute="top" id="RAS-Yn-fLx"/>
                                     <constraint firstItem="V0k-bI-ZCP" firstAttribute="leading" secondItem="0up-Fl-d9s" secondAttribute="leading" constant="8" id="Wgo-dC-dkK"/>
+                                    <constraint firstAttribute="trailing" secondItem="wdF-8w-3sl" secondAttribute="trailing" constant="-6" id="cXz-tR-wqP"/>
                                     <constraint firstItem="Elf-KQ-16Q" firstAttribute="top" secondItem="V0k-bI-ZCP" secondAttribute="bottom" constant="-2" id="q2v-IP-NN0"/>
+                                    <constraint firstAttribute="bottom" secondItem="wdF-8w-3sl" secondAttribute="bottom" constant="0.5" id="uiz-B0-AIe"/>
                                     <constraint firstAttribute="bottom" secondItem="Elf-KQ-16Q" secondAttribute="bottom" constant="-5" id="wG0-v1-lKt"/>
+                                    <constraint firstItem="wdF-8w-3sl" firstAttribute="leading" secondItem="0up-Fl-d9s" secondAttribute="leading" constant="-10" id="ymc-9W-DtY"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4c-WS-raZ" userLabel="Abilities View">
@@ -323,13 +333,23 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcU-I8-2I0">
+                                        <rect key="frame" x="-6" y="0.0" width="50" height="40"/>
+                                        <connections>
+                                            <action selector="abilitiesButtonAction:" destination="3tj-Mh-HhV" eventType="touchUpInside" id="YE2-y1-OiI"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="OPc-hI-ZMv" secondAttribute="trailing" constant="8" id="58f-1d-Hxx"/>
                                     <constraint firstItem="OPc-hI-ZMv" firstAttribute="leading" secondItem="u4c-WS-raZ" secondAttribute="leading" constant="8" id="7gt-eM-fIF"/>
+                                    <constraint firstAttribute="bottom" secondItem="vcU-I8-2I0" secondAttribute="bottom" constant="-5.5" id="P24-gS-7nD"/>
+                                    <constraint firstItem="vcU-I8-2I0" firstAttribute="top" secondItem="u4c-WS-raZ" secondAttribute="top" id="aL8-ZI-B3U"/>
                                     <constraint firstItem="vv3-iO-7bh" firstAttribute="leading" secondItem="u4c-WS-raZ" secondAttribute="leading" id="bdy-0M-R1W"/>
                                     <constraint firstAttribute="trailing" secondItem="vv3-iO-7bh" secondAttribute="trailing" id="bgc-JO-6yN"/>
+                                    <constraint firstItem="vcU-I8-2I0" firstAttribute="leading" secondItem="u4c-WS-raZ" secondAttribute="leading" constant="-6" id="e4t-hv-3DO"/>
+                                    <constraint firstAttribute="trailing" secondItem="vcU-I8-2I0" secondAttribute="trailing" id="l7S-3t-Xii"/>
                                     <constraint firstItem="OPc-hI-ZMv" firstAttribute="top" secondItem="u4c-WS-raZ" secondAttribute="top" id="rKg-Xa-JX0"/>
                                     <constraint firstItem="vv3-iO-7bh" firstAttribute="top" secondItem="OPc-hI-ZMv" secondAttribute="bottom" constant="-2" id="s1W-dI-1nT"/>
                                     <constraint firstAttribute="bottom" secondItem="vv3-iO-7bh" secondAttribute="bottom" constant="-5" id="yvx-Gu-BhC"/>
@@ -363,6 +383,13 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wei-tD-Hgz">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="levelButtonAction:" destination="3tj-Mh-HhV" eventType="touchUpInside" id="QQI-k4-Gig"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -394,18 +421,28 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grk-fn-rA9">
+                                                <rect key="frame" x="17" y="-6" width="63" height="50"/>
+                                                <connections>
+                                                    <action selector="badgesButtonAction:" destination="3tj-Mh-HhV" eventType="touchUpInside" id="ui2-Xz-v1M"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="CEK-JY-Xms" firstAttribute="top" secondItem="ex0-8V-Ycw" secondAttribute="top" constant="8" id="6xd-S3-iu8"/>
+                                            <constraint firstAttribute="trailing" secondItem="Grk-fn-rA9" secondAttribute="trailing" id="77f-Az-12g"/>
+                                            <constraint firstAttribute="bottom" secondItem="Grk-fn-rA9" secondAttribute="bottom" id="Efh-6E-Mru"/>
                                             <constraint firstItem="sF7-jQ-N9B" firstAttribute="top" secondItem="ex0-8V-Ycw" secondAttribute="top" id="YO5-N8-Gwe"/>
                                             <constraint firstAttribute="width" constant="80" id="ZRt-sU-Jbt"/>
                                             <constraint firstAttribute="bottom" secondItem="CEK-JY-Xms" secondAttribute="bottom" constant="-5" id="dq9-ch-0JG"/>
                                             <constraint firstItem="CEK-JY-Xms" firstAttribute="leading" secondItem="sF7-jQ-N9B" secondAttribute="trailing" id="gbC-AD-HjB"/>
                                             <constraint firstItem="sF7-jQ-N9B" firstAttribute="leading" secondItem="ex0-8V-Ycw" secondAttribute="leading" id="lze-VF-LJ3"/>
                                             <constraint firstAttribute="trailing" secondItem="Wqe-vC-hHB" secondAttribute="trailing" constant="8" id="mPW-hI-UGi"/>
+                                            <constraint firstItem="Grk-fn-rA9" firstAttribute="top" secondItem="ex0-8V-Ycw" secondAttribute="top" constant="-6" id="oWw-B4-w9Q"/>
                                             <constraint firstItem="Wqe-vC-hHB" firstAttribute="top" secondItem="ex0-8V-Ycw" secondAttribute="top" constant="4" id="pac-gQ-zXt"/>
                                             <constraint firstAttribute="trailing" secondItem="CEK-JY-Xms" secondAttribute="trailing" constant="8" id="rEl-XA-awI"/>
+                                            <constraint firstItem="Grk-fn-rA9" firstAttribute="leading" secondItem="ex0-8V-Ycw" secondAttribute="leading" constant="17" id="uAV-QG-Aie"/>
                                             <constraint firstItem="Wqe-vC-hHB" firstAttribute="leading" secondItem="sF7-jQ-N9B" secondAttribute="trailing" constant="4" id="zJf-N4-Sba"/>
                                         </constraints>
                                     </view>
@@ -427,6 +464,12 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6B-0l-7iK">
+                                                <rect key="frame" x="8" y="4" width="191" height="32"/>
+                                                <connections>
+                                                    <action selector="pointsButtonAction:" destination="3tj-Mh-HhV" eventType="touchUpInside" id="vJj-4o-nGm"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -436,9 +479,13 @@
                                             <constraint firstItem="3Xp-A1-umr" firstAttribute="leading" secondItem="pjW-XL-nQX" secondAttribute="trailing" constant="8" id="685-pu-5NR"/>
                                             <constraint firstAttribute="trailing" secondItem="3Xp-A1-umr" secondAttribute="trailing" id="73r-pS-Ji9"/>
                                             <constraint firstAttribute="bottom" secondItem="Kyu-uj-uhH" secondAttribute="bottom" id="C20-wd-Q7m"/>
+                                            <constraint firstAttribute="bottom" secondItem="N6B-0l-7iK" secondAttribute="bottom" constant="8" id="Ghf-zB-59l"/>
+                                            <constraint firstItem="N6B-0l-7iK" firstAttribute="top" secondItem="SpG-qD-AWb" secondAttribute="top" constant="4" id="HMO-pd-5ah"/>
+                                            <constraint firstItem="N6B-0l-7iK" firstAttribute="leading" secondItem="pjW-XL-nQX" secondAttribute="trailing" constant="16" id="Hd0-dg-dj1"/>
                                             <constraint firstItem="Kyu-uj-uhH" firstAttribute="leading" secondItem="SpG-qD-AWb" secondAttribute="leading" constant="8" id="Ks6-g8-hhb"/>
                                             <constraint firstItem="pjW-XL-nQX" firstAttribute="top" secondItem="SpG-qD-AWb" secondAttribute="top" id="MdR-pj-Ggs"/>
                                             <constraint firstItem="3Xp-A1-umr" firstAttribute="leading" secondItem="SpG-qD-AWb" secondAttribute="leading" id="aoc-fm-DMV"/>
+                                            <constraint firstAttribute="trailing" secondItem="N6B-0l-7iK" secondAttribute="trailing" id="j62-Te-j1t"/>
                                         </constraints>
                                     </view>
                                 </subviews>
