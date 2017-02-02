@@ -43,7 +43,7 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
     [self.navigationItem setHidesBackButton:YES];
     [self tableView];
     
-    [self performSelector:@selector(changeAbility) withObject:nil afterDelay:3.0f];
+    [self performSelector:@selector(changeAbility) withObject:nil afterDelay:10.0f];
     
 }
 
@@ -209,7 +209,37 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Activity *activity = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    NSLog(@"...%@", activity);
+    
+    NSString *m;
+
+    switch (activity.type) {
+        case SSIActivityTypeQuiz:
+            m = @"QUIZ - User can participate as non-member, share via social networking. If not member, told they will not receive points and invited to become a member.";
+            
+            break;
+        case SSIActivityTypeSurvey:
+            m = @"SURVEY -- User can participate as member.";
+            break;
+            
+        default:
+            break;
+    }
+    
+    NSString *title = activity.title;
+    NSString *message = [NSString stringWithFormat:@"%@",  m];
+    NSString *okButtonTitle = @"OK";
+    
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+                                       
+                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                       
+                                   }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
 
 }
 
