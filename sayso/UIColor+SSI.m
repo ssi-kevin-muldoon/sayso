@@ -18,6 +18,12 @@
     return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1.0f];
 }
 
++ (UIColor *)blueSplash {
+    CGFloat red = 2; CGFloat green = 119; CGFloat blue = 189;
+    return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1.0f];
+}
+
+
 /*
  #4FC3F7
  **/

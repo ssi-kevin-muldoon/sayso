@@ -35,8 +35,21 @@
 }
 */
 - (IBAction)socialLoginButtonAction:(UIButton *)sender {
-    NSLog(@"%u", sender.tag);
-
+    NSLog(@"%ld", (long)sender.tag);
+    NSString *title = @"Social SIGN IN";
+    NSString *message = @"Transistion user to sign in with their social networking account.";
+    NSString *okButtonTitle = @"OK";
+    
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                   }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
 }
 
 - (IBAction)helpButtonAction:(id)sender {

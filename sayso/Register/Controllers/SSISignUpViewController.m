@@ -43,8 +43,26 @@
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
+
 - (IBAction)dismissButtonAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)socialLoginButtonAction:(UIButton *)sender {
+    
+    NSLog(@"%ld", (long)sender.tag);
+    NSString *title = @"Social Signup";
+    NSString *message = @"Transistion user to social signup";
+    NSString *okButtonTitle = @"OK";
+    
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                   }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 @end

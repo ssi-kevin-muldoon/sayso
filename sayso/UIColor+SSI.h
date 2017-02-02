@@ -12,5 +12,6 @@
 
 + (UIColor *)blueBurst;
 + (UIColor *)seaFrolic;
++ (UIColor *)blueSplash;
 
 @end

@@ -625,7 +625,7 @@
         <image name="saysoHeroLogo" width="244" height="80"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="0YM-Ks-GMh"/>
         <segue reference="dI2-jP-PuY"/>
-        <segue reference="jxt-jL-Wtj"/>
     </inferredMetricsTieBreakers>
 </document>
