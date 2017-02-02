@@ -43,5 +43,8 @@
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
+- (IBAction)dismissButtonAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

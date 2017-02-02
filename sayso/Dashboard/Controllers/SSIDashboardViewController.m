@@ -42,9 +42,71 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"saysoNavigationBarLogo"]];
     [self.navigationItem setHidesBackButton:YES];
     [self tableView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self refreshData];
+
+    [self setRightBarButtonItems];
+    [self setLeftBarButtonItems];
+}
+
+- (void)setRightBarButtonItems {
     
-    [self performSelector:@selector(changeAbility) withObject:nil afterDelay:10.0f];
+    UIButton *button =  [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:@"account"] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(accountButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    [button setFrame:CGRectMake(0, 0, 24, 24)];
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.rightBarButtonItems = @[buttonItem];
+}
+
+- (void)setLeftBarButtonItems {
     
+    UIButton *button =  [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:@"hamburger"] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(hamburgerButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    [button setFrame:CGRectMake(0, 0, 30, 18)];
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItems = @[buttonItem];
+}
+
+- (IBAction)accountButtonAction {
+    
+    NSString *title = @"Account";
+    NSString *message = @"Users can access account settings, update demographic data. Of not a memeber, they are invited to become full-members (sign-up)";
+    NSString *okButtonTitle = @"OK";
+    
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+                                       
+                                       [self changeAbility];
+                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                       
+                                   }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (IBAction)hamburgerButtonAction {
+    
+    NSString *title = @"Menu";
+    NSString *message = @"Slides the view to right, revealing addt'l actions. Contact us, Privacy, Terms.";
+    NSString *okButtonTitle = @"OK";
+    
+    SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
+    [alert addAction:[SSIAlertAction title:okButtonTitle
+                                     style:SSIAlertActionButtonStyleDefault
+                                   handler:^{
+                                       
+                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                       
+                                   }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)changeAbility {
@@ -88,24 +150,19 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
                                                       delegate:self];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self refreshData];
-}
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     [self.animatedToolBar close];
     [self.animatedToolBar percentValue:@"10%"];
     [self setNeedsStatusBarAppearanceUpdate];
-    
 }
 
 - (IBAction)buttonAction:(id)sender {
     
     [self toggleAction:sender];
 }
+
 - (IBAction)redeemButtonAction:(id)sender {
     
     NSString *title = @"Redeem";
@@ -126,8 +183,9 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
 }
 
 - (IBAction)levelButtonAction:(id)sender {
-    NSString *title = @"Redeem";
-    NSString *message = @"This is where we'd present all the fabulous prizes. Educate user 'star coins' can be turned into gift cards.";
+    
+    NSString *title = @"Level";
+    NSString *message = @"Users 'level up' with every star coin earned.";
     NSString *okButtonTitle = @"OK";
     
     SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
@@ -143,8 +201,9 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
 }
 
 - (IBAction)abilitiesButtonAction:(id)sender {
-    NSString *title = @"Levels";
-    NSString *message = @"Every 10,000 points earned, levels up and earns a star, redeemable for $10 gift card.";
+    
+    NSString *title = @"Abilities";
+    NSString *message = @"Abilities unlocked. Become member : Phase ONE to earn points. Phase TWO can receive surveys worth 5,000 points or more. THREE can unlock notifications for more surveys. FOUR location services for mission surveys. ";
     NSString *okButtonTitle = @"OK";
     
     SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
@@ -161,6 +220,7 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
 
 
 - (IBAction)badgesButtonAction:(id)sender {
+    
     NSString *title = @"Badges";
     NSString *message = @"Badges shown here, users win badges for 'First Complete', 'First Screen out', 'Shared a quiz'";
     NSString *okButtonTitle = @"OK";
@@ -169,9 +229,7 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
     [alert addAction:[SSIAlertAction title:okButtonTitle
                                      style:SSIAlertActionButtonStyleDefault
                                    handler:^{
-                                       
                                        [alert dismissViewControllerAnimated:YES completion:nil];
-                                       
                                    }]];
     
     [self presentViewController:alert animated:YES completion:nil];
@@ -226,7 +284,7 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
     }
     
     NSString *title = activity.title;
-    NSString *message = [NSString stringWithFormat:@"%@",  m];
+    NSString *message = [NSString stringWithFormat:@"%@", m];
     NSString *okButtonTitle = @"OK";
     
     SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];

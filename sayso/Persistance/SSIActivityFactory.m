@@ -43,13 +43,7 @@ static NSString *SSIActivityPropertyValueVisibleKey = @"visible";
 }
 
 - (void)deleteAll {
-    
     [Activity MR_truncateAll];
-
-//    NSArray *allEntities = [NSManagedObjectModel MR_defaultManagedObjectModel].entities;
-//    [allEntities enumerateObjectsUsingBlock:^(NSEntityDescription *entityDescription, NSUInteger idx, BOOL *stop) {
-//        [NSClassFromString([entityDescription managedObjectClassName]) MR_truncateAll];
-//    }];
 }
 
 - (NSArray *)dataSource {
@@ -177,7 +171,8 @@ static NSString *SSIActivityPropertyValueVisibleKey = @"visible";
     [activity setUrl:response[SSIActivityPropertyURLKey]];
     [activity setValueConsolation:[response[SSIActivityPropertyValueConsolationKey] integerValue]];
     [activity setQgid:response[SSIActivityPropertyValueQGIDKey]];
-    
+    [activity setVisible:response[SSIActivityPropertyValueVisibleKey]];
+
     return activity;
     
 }
