@@ -2,7 +2,7 @@
 //  Activity+CoreDataProperties.h
 //  
 //
-//  Created by Kevin Muldoon on 1/23/17.
+//  Created by Kevin Muldoon on 2/2/17.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -16,16 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<Activity *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSString *title;
-@property (nullable, nonatomic, copy) NSString *summery;
+@property (nonatomic) BOOL deferred;
 @property (nullable, nonatomic, copy) NSString *detail;
-@property (nonatomic) int16_t valueComplete;
+@property (nonatomic) int16_t index;
+@property (nullable, nonatomic, copy) NSString *qgid;
+@property (nullable, nonatomic, copy) NSString *summery;
+@property (nullable, nonatomic, copy) NSString *title;
 @property (nonatomic) int16_t type;
 @property (nullable, nonatomic, copy) NSString *url;
-@property (nonatomic) BOOL deferred;
+@property (nonatomic) int16_t valueComplete;
 @property (nonatomic) int16_t valueConsolation;
-@property (nullable, nonatomic, copy) NSString *qgid;
-@property (nonatomic) int16_t index;
+@property (nonatomic) BOOL visible;
 
 @end
 

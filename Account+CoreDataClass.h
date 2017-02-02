@@ -1,5 +1,5 @@
 //
-//  sayso+CoreDataModel.h
+//  Account+CoreDataClass.h
 //  
 //
 //  Created by Kevin Muldoon on 2/2/17.
@@ -10,9 +10,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-#import "Account+CoreDataClass.h"
-#import "Activity+CoreDataClass.h"
+NS_ASSUME_NONNULL_BEGIN
 
+@interface Account : NSManagedObject
 
+@end
 
+NS_ASSUME_NONNULL_END
 
+#import "Account+CoreDataProperties.h"

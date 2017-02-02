@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Account+CoreDataClass.h">
+   </FileRef>
+   <FileRef
+      location = "group:Account+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:Account+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:Account+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
       location = "group:Activity+CoreDataClass.h">
    </FileRef>
    <FileRef

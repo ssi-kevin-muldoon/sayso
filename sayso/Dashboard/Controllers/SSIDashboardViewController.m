@@ -6,11 +6,14 @@
 //  Copyright © 2017 Survey Sampling International, LLC. All rights reserved.
 //
 
-#import "SSIDashboardViewController.h"
-#import "SSIToolBar+SSI.h"
-#import "Activity+CoreDataClass.h"
 #import <MagicalRecord/MagicalRecord.h>
+#import <MagicalRecord/NSManagedObject+MagicalFinders.h>
+
+#import "SSIDashboardViewController.h"
 #import "SSIActivityTableViewCell.h"
+#import "SSIToolBar+SSI.h"
+#import "Account+CoreDataProperties.h"
+#import "Activity+CoreDataClass.h"
 
 typedef enum {
     SSIActivityTypeQuiz = 0,
@@ -19,14 +22,15 @@ typedef enum {
 
 static NSString * const SSITableViewCellQuizIdentifier = @"SSITableViewCellQuizIdentifier";
 static NSString * const SSITableViewCellSurveyIdentifier = @"SSITableViewCellSurveyIdentifier";
-static NSString * const SSINSFetchedResultsControllerCache = @"SSINSFetchedResultsControllerCache";
+static NSString * const SSINSFetchedResultsControllerCache = nil;
 
 @interface SSIDashboardViewController () <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 @property (weak, nonatomic) IBOutlet SSIToolBar *animatedToolBar;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *button;
-@property (strong, nonatomic) NSMutableArray *dataSource;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+
+@property (strong, nonatomic) NSManagedObjectContext *context;
 @end
 
 @implementation SSIDashboardViewController
@@ -37,14 +41,49 @@ static NSString * const SSINSFetchedResultsControllerCache = @"SSINSFetchedResul
     [self.navigationItem setHidesBackButton:YES];
     [self tableView];
     
-    // Delete cache first, if a cache is used
-    [NSFetchedResultsController deleteCacheWithName:SSINSFetchedResultsControllerCache];
-    NSError *error;
-    if (![[self fetchedResultsController] performFetch:&error]) {
-        // Update to handle the error appropriately.
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-    }
+    [self performSelector:@selector(changeAbility) withObject:nil afterDelay:3.0f];
+    
+}
 
+- (void)changeAbility {
+    
+    Account *account = [Account MR_findFirst];
+    
+    account.email = @"";
+    account.entityId = @"";
+    account.locale = @"";
+    account.ableToJoin = NO;
+    account.ableToLogin = NO;
+    account.ableToTakeSurveys = NO;
+    account.ableToClaim = NO;
+    account.sessionId = @"";
+    account.ability = 1;
+    
+    [self.context MR_saveToPersistentStoreAndWait];
+    
+    [self updateTableView];
+}
+
+- (void)foo {
+    
+    //
+    // Need to directly modify the Activity table in order to trigger NSFetchedResultsControllerDelegate methods
+    //
+    
+    Activity *activity = [Activity MR_findFirst];
+    
+    activity.valueComplete = 100;
+    
+    [self.context MR_saveToPersistentStoreAndWait];
+}
+
+- (void)updateTableView {
+    
+   self.fetchedResultsController = [Activity MR_fetchAllGroupedBy:nil
+                                                 withPredicate:self.predicate
+                                                      sortedBy:@"type"
+                                                     ascending:NO
+                                                      delegate:self];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -58,7 +97,7 @@ static NSString * const SSINSFetchedResultsControllerCache = @"SSINSFetchedResul
     [self.animatedToolBar close];
     [self.animatedToolBar percentValue:@"10%"];
     [self setNeedsStatusBarAppearanceUpdate];
-
+    
 }
 
 - (IBAction)buttonAction:(id)sender {
@@ -78,27 +117,6 @@ static NSString * const SSINSFetchedResultsControllerCache = @"SSINSFetchedResul
 }
 
 #pragma mark - UITableViewDataSource
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return [self.dataSource count];
-//}
-
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//    SSIActivityTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SSIActivityTableViewCellIdentifier forIndexPath:indexPath];
-//    
-//    Activity *activity = [self.dataSource objectAtIndex:indexPath.row];
-//    
-//    [cell.valueLabel setText: [NSString stringWithFormat:@"%i", [activity valueComplete]] ];
-//    [cell.typeLabel setText:@"QUIZ"];
-//    [cell.pointsLabel setText:@"POINTS"];
-//    cell.titleLabel.text = [activity title];
-//    cell.bodyLabel.text = [activity summery];
-//
-//    [cell setNeedsUpdateConstraints];
-//    [cell updateConstraintsIfNeeded];
-//    
-//    return cell;
-//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Activity *activity = [self.fetchedResultsController objectAtIndexPath:indexPath];
@@ -106,11 +124,7 @@ static NSString * const SSINSFetchedResultsControllerCache = @"SSINSFetchedResul
 
 }
 
-
 - (void)refreshData {
-    
-    [self.dataSource removeAllObjects];
-    [self.dataSource addObjectsFromArray:[Activity MR_findAll]];
     [self.tableView reloadData];
 }
 
@@ -128,13 +142,6 @@ static NSString * const SSINSFetchedResultsControllerCache = @"SSINSFetchedResul
     return NO;
 }
 
-- (NSMutableArray *)dataSource {
-    if (!_dataSource) {
-        _dataSource = [NSMutableArray new];
-    }
-    return _dataSource;
-}
-
 - (UITableView *)tableView {
     
     if (_tableView.tag != INT_MAX) {
@@ -146,26 +153,40 @@ static NSString * const SSINSFetchedResultsControllerCache = @"SSINSFetchedResul
         [_tableView setRowHeight:UITableViewAutomaticDimension];
         [_tableView setEstimatedRowHeight:150.0f];
         [_tableView setContentInset:UIEdgeInsetsMake(5, 0, 50, 0)];
-
+        [self updateTableView];
     }
     return _tableView;
 }
 
 - (NSFetchedResultsController *)fetchedResultsController {
-    if (_fetchedResultsController != nil) {
-        return _fetchedResultsController;
+    
+    if (!_fetchedResultsController) {
+        
+//        NSFetchRequest *fetchRequest = [Activity MR_requestAllSortedBy:@"type" ascending:NO];
+//        [fetchRequest setPredicate : [self predicate] ];
+//        [fetchRequest setFetchLimit:20];
+//        [fetchRequest setFetchBatchSize:10];
+        
+//        _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+//                                                                        managedObjectContext:self.context
+//                                                                          sectionNameKeyPath:nil
+//                                                                                   cacheName:SSINSFetchedResultsControllerCache];
+        
+        _fetchedResultsController = [Activity MR_fetchAllGroupedBy:nil
+                                                     withPredicate:self.predicate
+                                                          sortedBy:@"type"
+                                                         ascending:NO
+                                                          delegate:self];
+        
+//        _fetchedResultsController.delegate = self;
     }
-    
-    NSFetchRequest *fetchRequest = [Activity MR_requestAllSortedBy:@"type" ascending:NO];
-    
-    [fetchRequest setFetchLimit:100];         // Let's say limit fetch to 100
-    [fetchRequest setFetchBatchSize:20];      // After 20 are faulted
-    
-    NSFetchedResultsController *theFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[NSManagedObjectContext MR_defaultContext] sectionNameKeyPath:nil cacheName:SSINSFetchedResultsControllerCache];
-    
-    self.fetchedResultsController = theFetchedResultsController;
-    self.fetchedResultsController.delegate = self;
+
     return _fetchedResultsController;
+}
+
+- (NSPredicate *)predicate {
+    int16_t ability = [Account MR_findFirst].ability;
+    return [NSPredicate predicateWithFormat:@"type <= %i", ability];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -206,6 +227,48 @@ static NSString * const SSINSFetchedResultsControllerCache = @"SSINSFetchedResul
     [cell updateConstraintsIfNeeded];
     
     return cell;
+}
+
+- (void)controller:(NSFetchedResultsController *)controller
+   didChangeObject:(id)anObject
+       atIndexPath:(NSIndexPath *)indexPath
+     forChangeType:(NSFetchedResultsChangeType)type
+      newIndexPath:(NSIndexPath *)newIndexPath {
+    NSLog(@"%lu", type);
+    switch (type) {
+        case NSFetchedResultsChangeInsert: {
+            [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        }
+        case NSFetchedResultsChangeDelete: {
+            [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        }
+        case NSFetchedResultsChangeUpdate: {
+//            [self configureCell:(TSPToDoCell *)[self.tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            break;
+        }
+        case NSFetchedResultsChangeMove: {
+            [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        }
+    }
+}
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView beginUpdates];
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView endUpdates];
+}
+
+- (NSManagedObjectContext *)context {
+    if (!_context) {
+        _context = [NSManagedObjectContext MR_defaultContext];
+    }
+    return _context;
 }
 
 @end

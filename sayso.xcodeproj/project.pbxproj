@@ -42,6 +42,7 @@
 		132CD0061E268DCC008F9E7A /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CD0051E268DCC008F9E7A /* QCMethod.m */; };
 		132CD0101E26E54C008F9E7A /* UIImage+SSIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CD00F1E26E54C008F9E7A /* UIImage+SSIImage.m */; };
 		1337C6581E2D139100B6FF03 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1337C6571E2D139100B6FF03 /* Dashboard.storyboard */; };
+		1388135D1E43407A008F96EF /* SSIAccountFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1388135C1E43407A008F96EF /* SSIAccountFactory.m */; };
 		13DE61B41E2FE5CD0012C912 /* SSIChromePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61B11E2FE5CD0012C912 /* SSIChromePresentationController.m */; };
 		13DE61B51E2FE5CD0012C912 /* SSIVanillaPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61B31E2FE5CD0012C912 /* SSIVanillaPresentationController.m */; };
 		13DE61BC1E2FE5D70012C912 /* SSIDropDownDismissAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE61B71E2FE5D70012C912 /* SSIDropDownDismissAnimatedTransitioning.m */; };
@@ -139,6 +140,8 @@
 		132CD00E1E26E54C008F9E7A /* UIImage+SSIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SSIImage.h"; sourceTree = "<group>"; };
 		132CD00F1E26E54C008F9E7A /* UIImage+SSIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SSIImage.m"; sourceTree = "<group>"; };
 		1337C6571E2D139100B6FF03 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		1388135B1E43407A008F96EF /* SSIAccountFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIAccountFactory.h; sourceTree = "<group>"; };
+		1388135C1E43407A008F96EF /* SSIAccountFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIAccountFactory.m; sourceTree = "<group>"; };
 		13DE61B01E2FE5CD0012C912 /* SSIChromePresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIChromePresentationController.h; sourceTree = "<group>"; };
 		13DE61B11E2FE5CD0012C912 /* SSIChromePresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSIChromePresentationController.m; sourceTree = "<group>"; };
 		13DE61B21E2FE5CD0012C912 /* SSIVanillaPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSIVanillaPresentationController.h; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				1316B6A21E36D18D00390A4C /* sayso.xcdatamodeld */,
 				1316B6B71E36D88B00390A4C /* SSIActivityFactory.h */,
 				1316B6B81E36D88B00390A4C /* SSIActivityFactory.m */,
+				1388135B1E43407A008F96EF /* SSIAccountFactory.h */,
+				1388135C1E43407A008F96EF /* SSIAccountFactory.m */,
 			);
 			path = Persistance;
 			sourceTree = "<group>";
@@ -786,6 +791,7 @@
 				13DE61E71E2FE6E20012C912 /* SSIAlertController.m in Sources */,
 				13DE61CA1E2FE5E30012C912 /* SSIVerticalCarouselSpringyPresentAnimatedTransitioning.m in Sources */,
 				13DE61E41E2FE6D80012C912 /* SSIAlertViewControllerAbstract.m in Sources */,
+				1388135D1E43407A008F96EF /* SSIAccountFactory.m in Sources */,
 				13DE61FB1E301DF10012C912 /* SSISignUpViewController.m in Sources */,
 				1322FBFF1E383121008AEC74 /* SSIActivityTableViewCell.m in Sources */,
 				1325C3F51E2EF3BB00B35C07 /* SSIToolBar.m in Sources */,

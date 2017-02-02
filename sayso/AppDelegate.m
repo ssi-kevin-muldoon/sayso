@@ -11,6 +11,7 @@
 #import "UIColor+SSI.h"
 #import <MagicalRecord/MagicalRecord.h>
 #import "SSIActivityFactory.h"
+#import "SSIAccountFactory.h"
 
 @interface AppDelegate ()
 
@@ -47,9 +48,7 @@
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"sayso"];
     
     [SSIActivityFactory new];
-    
-
-    
+    [SSIAccountFactory new];
     
     return YES;
 }

@@ -2,7 +2,7 @@
 //  Activity+CoreDataProperties.m
 //  
 //
-//  Created by Kevin Muldoon on 1/23/17.
+//  Created by Kevin Muldoon on 2/2/17.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -15,15 +15,16 @@
 	return [[NSFetchRequest alloc] initWithEntityName:@"Activity"];
 }
 
-@dynamic title;
-@dynamic summery;
+@dynamic deferred;
 @dynamic detail;
-@dynamic valueComplete;
+@dynamic index;
+@dynamic qgid;
+@dynamic summery;
+@dynamic title;
 @dynamic type;
 @dynamic url;
-@dynamic deferred;
+@dynamic valueComplete;
 @dynamic valueConsolation;
-@dynamic qgid;
-@dynamic index;
+@dynamic visible;
 
 @end

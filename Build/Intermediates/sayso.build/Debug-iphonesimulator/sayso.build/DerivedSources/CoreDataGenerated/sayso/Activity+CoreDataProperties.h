@@ -2,7 +2,7 @@
 //  Activity+CoreDataProperties.h
 //  
 //
-//  Created by Kevin Muldoon on 1/25/17.
+//  Created by Kevin Muldoon on 2/2/17.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *url;
 @property (nonatomic) int16_t valueComplete;
 @property (nonatomic) int16_t valueConsolation;
+@property (nonatomic) BOOL visible;
 
 @end
 
