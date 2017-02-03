@@ -15,6 +15,7 @@
 #import "Account+CoreDataProperties.h"
 #import "Activity+CoreDataClass.h"
 #import "SSIAlertController.h"
+#import "UICountingLabel.h"
 
 typedef enum {
     SSIActivityTypeQuiz = 0,
@@ -32,6 +33,7 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @property (strong, nonatomic) NSManagedObjectContext *context;
+@property (weak, nonatomic) IBOutlet UICountingLabel *pointsValueLabel;
 @end
 
 @implementation SSIDashboardViewController
@@ -75,7 +77,7 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
 - (IBAction)accountButtonAction {
     
     NSString *title = @"Account";
-    NSString *message = @"Users can access account settings, update demographic data. Of not a memeber, they are invited to become full-members (sign-up)";
+    NSString *message = @"Users can access account settings, update demographic data. If not a memeber, invited to become full-members (sign-up). Reminded they win points and badges.";
     NSString *okButtonTitle = @"OK";
     
     SSIAlertController *alert = [SSIAlertController alertWithTitle:title message:message style:SSIAlertViewControllerStyleDefault];
@@ -245,7 +247,9 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
                                      style:SSIAlertActionButtonStyleDefault
                                    handler:^{
                                        
-                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                       [alert dismissViewControllerAnimated:YES completion:^{
+                                           [self pointsValueLabel];
+                                       }];
                                        
                                    }]];
     
@@ -448,6 +452,15 @@ static NSString * const SSINSFetchedResultsControllerCache = nil;
     return _context;
 }
 
+- (UICountingLabel *)pointsValueLabel {
+    if (_pointsValueLabel.tag != INT_MAX) {
+        _pointsValueLabel.tag = INT_MAX;
+        _pointsValueLabel.format = @"%d";
+        _pointsValueLabel.method = UILabelCountingMethodEaseOut;
+        [_pointsValueLabel countFrom:0 to:500 withDuration:1.2f];
+    }
+    return _pointsValueLabel;
+}
 
 
 @end

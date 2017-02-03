@@ -288,19 +288,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0up-Fl-d9s" userLabel="Redeem View">
-                                <rect key="frame" x="315" y="626.5" width="44" height="34.5"/>
+                                <rect key="frame" x="315" y="626" width="44" height="35"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giftIconiPoll" translatesAutoresizingMaskIntoConstraints="NO" id="V0k-bI-ZCP">
                                         <rect key="frame" x="8" y="0.0" width="28" height="28"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elf-KQ-16Q">
-                                        <rect key="frame" x="0.0" y="26" width="44" height="13.5"/>
+                                        <rect key="frame" x="0.0" y="26" width="44" height="14"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdF-8w-3sl">
-                                        <rect key="frame" x="-10" y="0.0" width="60" height="34"/>
+                                        <rect key="frame" x="-10" y="0.0" width="60" height="35"/>
                                         <connections>
                                             <action selector="redeemButtonAction:" destination="3tj-Mh-HhV" eventType="touchUpInside" id="T7t-YF-O61"/>
                                         </connections>
@@ -322,19 +322,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4c-WS-raZ" userLabel="Abilities View">
-                                <rect key="frame" x="16" y="626.5" width="44" height="34.5"/>
+                                <rect key="frame" x="16" y="626" width="44" height="35"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="powerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="OPc-hI-ZMv">
                                         <rect key="frame" x="8" y="0.0" width="28" height="28"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abilities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vv3-iO-7bh">
-                                        <rect key="frame" x="0.0" y="26" width="44" height="13.5"/>
+                                        <rect key="frame" x="0.0" y="26" width="44" height="14"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcU-I8-2I0">
-                                        <rect key="frame" x="-6" y="0.0" width="50" height="40"/>
+                                        <rect key="frame" x="-6" y="0.0" width="50" height="41"/>
                                         <connections>
                                             <action selector="abilitiesButtonAction:" destination="3tj-Mh-HhV" eventType="touchUpInside" id="YE2-y1-OiI"/>
                                         </connections>
@@ -356,7 +356,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zs-rd-NHH">
-                                <rect key="frame" x="137.5" y="588" width="100" height="77"/>
+                                <rect key="frame" x="138" y="588" width="100" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="6yt-HB-Qtx"/>
                                     <constraint firstAttribute="width" constant="100" id="grR-nM-DdE"/>
@@ -407,16 +407,16 @@
                                         <rect key="frame" x="295" y="0.0" width="80" height="44"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verticalLine" translatesAutoresizingMaskIntoConstraints="NO" id="sF7-jQ-N9B">
-                                                <rect key="frame" x="0.0" y="0.0" width="30.5" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="44"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BADGES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqe-vC-hHB">
-                                                <rect key="frame" x="34.5" y="4" width="37.5" height="11"/>
+                                                <rect key="frame" x="34" y="4" width="38" height="11"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEK-JY-Xms">
-                                                <rect key="frame" x="30.5" y="8" width="41.5" height="41"/>
+                                                <rect key="frame" x="30" y="8" width="42" height="41"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -458,7 +458,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-uj-uhH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-uj-uhH" customClass="UICountingLabel">
                                                 <rect key="frame" x="8" y="12" width="183" height="32"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -531,6 +531,7 @@
                     <connections>
                         <outlet property="animatedToolBar" destination="2di-if-lV6" id="hKj-YG-ctf"/>
                         <outlet property="button" destination="4Zs-rd-NHH" id="DXg-c0-SgN"/>
+                        <outlet property="pointsValueLabel" destination="Kyu-uj-uhH" id="pOQ-y3-tMQ"/>
                         <outlet property="tableView" destination="dhp-7g-9Ki" id="2MS-HK-9X8"/>
                     </connections>
                 </viewController>

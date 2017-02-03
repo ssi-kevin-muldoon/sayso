@@ -8,6 +8,7 @@ target 'sayso' do
   # Pods for sayso
   pod 'PureLayout', '~> 3.0'
   pod 'MagicalRecord', '~> 2.3'
+  pod 'UICountingLabel'
 
 target 'saysoTests' do
     inherit! :search_paths
