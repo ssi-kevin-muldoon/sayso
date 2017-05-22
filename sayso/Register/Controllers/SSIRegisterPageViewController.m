@@ -169,9 +169,9 @@ static NSString *SSIRegisterPageContentViewControllerIdentifier = @"SSIRegisterP
         _pageBodys = @[
                        @"Earn points, badges and prizes by taking fun quizzes and surveys.",
                        @"Lots of quizzes and surveys available! Always more points and prizes to earn every day.",
-                       @"Win coins redeemable for $10 in prizes with every 10,000 points you earn.",
+                       @"Earn coins redeemable for $10 in prizes with every 10,000 points you win.",
                        @"Choose from Amazon or iTunes gift cards, PayPal credit or even donate to your favorite charity.",
-                       @"Share with friends. Tweet about the gift card you earned! It's OK. You've earned bragging rights."
+                       @"Share quizzes with friends. Tweet about the gift card you earned! It's OK. You've earned bragging rights."
                        ];
     }
     return _pageBodys;

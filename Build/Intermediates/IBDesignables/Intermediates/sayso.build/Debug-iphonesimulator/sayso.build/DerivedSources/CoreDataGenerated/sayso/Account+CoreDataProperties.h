@@ -2,7 +2,7 @@
 //  Account+CoreDataProperties.h
 //  
 //
-//  Created by Kevin Muldoon on 2/2/17.
+//  Created by Kevin Muldoon on 5/11/17.
 //
 //  This file was automatically generated and should not be edited.
 //
